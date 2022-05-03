@@ -1,0 +1,142 @@
+package com.potenza.ciyashop_cloths.activity;
+
+import android.Manifest;
+import android.annotation.TargetApi;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.provider.Settings;
+import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
+import android.util.Log;
+import android.view.View;
+
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.utils.BaseActivity;
+import com.potenza.ciyashop_cloths.utils.Constant;
+import com.potenza.ciyashop_cloths.utils.RequestParamUtils;
+import com.potenza.ciyashop_cloths.utils.URLS;
+import com.potenza.ciyashop_cloths.utils.Utils;
+import com.potenza.ciyashop_cloths.utils.apicall.PostApi;
+
+import org.json.JSONObject;
+
+/**
+ * An example full-screen activity that shows and hides the system UI (i.e.
+ * status bar and navigation/system bar) with user interaction.
+ */
+public class SplashScreenActivity extends BaseActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash_screen);
+        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+        Constant.DEVICE_TOKEN = refreshedToken;
+        if (Constant.DEVICE_TOKEN != null && !Constant.DEVICE_TOKEN.equals("")) {
+            if (getPreferences().getString(RequestParamUtils.DEVICE_TOKEN, "").equals("") ||
+                    !getPreferences().getString(RequestParamUtils.DEVICE_TOKEN, "").equals(Constant.DEVICE_TOKEN)) {
+                addDeviceToken();
+
+            }
+        }
+        Log.e("token", "Refreshed token: " + refreshedToken);
+        if(mayRequestPermission()) {
+            setData();
+        }
+
+        Utils.printHashKey(this);
+
+
+
+    }
+
+    private boolean mayRequestPermission() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+            return true;
+        }
+        if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
+                checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            return true;
+        } else {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
+                    1212);
+
+            return false;
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        if (requestCode == 1212) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                setData();
+            } else {
+                Snackbar.make(findViewById(R.id.crMain), "Permission must be need", Snackbar.LENGTH_INDEFINITE)
+                        .setAction(android.R.string.ok, new View.OnClickListener() {
+                            @Override
+                            @TargetApi(Build.VERSION_CODES.M)
+                            public void onClick(View v) {
+                                final Intent i = new Intent();
+                                i.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                                i.addCategory(Intent.CATEGORY_DEFAULT);
+                                i.setData(Uri.parse("package:" + getPackageName()));
+                                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                i.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                                i.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+                                startActivity(i);
+                            }
+                        }).show();
+            }
+        }
+    }
+
+
+    public void setData() {
+        buildGoogleApiClient();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(SplashScreenActivity.this, HomeActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 1000);
+    }
+
+    public void addDeviceToken() {
+
+        PostApi postApi = new PostApi(SplashScreenActivity.this, "addDeviceToken", this);
+        try {
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put(RequestParamUtils.DEVICE_TOKEN, Constant.DEVICE_TOKEN);
+            jsonObject.put(RequestParamUtils.DEVICE_TYPE, "android");
+            postApi.setisDialogShow(false);
+            postApi.callPostApi(new URLS().ADDNOTIFICATION, jsonObject.toString());
+        } catch (Exception e) {
+            Log.e("Json Exception", e.getMessage());
+        }
+    }
+
+    @Override
+    public void onResponse(String response, String methodName) {
+        if (methodName.equals("addDeviceToken")) {
+            if (response != null && response.length() > 0) {
+                try {
+                    Log.e("Response is ", response);
+                    getPreferences().edit().putString(RequestParamUtils.DEVICE_TOKEN, Constant.DEVICE_TOKEN).commit();
+                } catch (Exception e) {
+                    Log.e(methodName + "Gson Exception is ", e.getMessage());
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,116 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewLight;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class OrderDetailActivity_ViewBinding implements Unbinder {
+  private OrderDetailActivity target;
+
+  private View view2131296911;
+
+  private View view2131296794;
+
+  @UiThread
+  public OrderDetailActivity_ViewBinding(OrderDetailActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public OrderDetailActivity_ViewBinding(final OrderDetailActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.tvOrderId = Utils.findRequiredViewAsType(source, R.id.tvOrderId, "field 'tvOrderId'", TextViewRegular.class);
+    target.tvOrderDateAndStatus = Utils.findRequiredViewAsType(source, R.id.tvOrderDateAndStatus, "field 'tvOrderDateAndStatus'", TextViewRegular.class);
+    target.tvTrackMessage1 = Utils.findRequiredViewAsType(source, R.id.tvTrackMessage1, "field 'tvTrackMessage1'", TextViewRegular.class);
+    target.tvTrackMessage2 = Utils.findRequiredViewAsType(source, R.id.tvTrackMessage2, "field 'tvTrackMessage2'", TextViewRegular.class);
+    view = Utils.findRequiredView(source, R.id.tvTrackID, "field 'tvTrackID' and method 'tvTrackIdClick'");
+    target.tvTrackID = Utils.castView(view, R.id.tvTrackID, "field 'tvTrackID'", TextViewRegular.class);
+    view2131296911 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvTrackIdClick();
+      }
+    });
+    target.tvSubTotal = Utils.findRequiredViewAsType(source, R.id.tvSubTotal, "field 'tvSubTotal'", TextViewBold.class);
+    target.tvShippingCharges = Utils.findRequiredViewAsType(source, R.id.tvShippingCharges, "field 'tvShippingCharges'", TextViewBold.class);
+    target.tvPaymentMethodTitle = Utils.findRequiredViewAsType(source, R.id.tvPaymentMethodTitle, "field 'tvPaymentMethodTitle'", TextViewBold.class);
+    target.tvTotal = Utils.findRequiredViewAsType(source, R.id.tvTotal, "field 'tvTotal'", TextViewBold.class);
+    target.tvEmail = Utils.findRequiredViewAsType(source, R.id.tvEmail, "field 'tvEmail'", TextViewLight.class);
+    target.tvPhone = Utils.findRequiredViewAsType(source, R.id.tvPhone, "field 'tvPhone'", TextViewLight.class);
+    target.tvBillingCompanyName = Utils.findRequiredViewAsType(source, R.id.tvBillingCompanyName, "field 'tvBillingCompanyName'", TextViewLight.class);
+    target.tvBillingName = Utils.findRequiredViewAsType(source, R.id.tvBillingName, "field 'tvBillingName'", TextViewLight.class);
+    target.tvBillingAddress1 = Utils.findRequiredViewAsType(source, R.id.tvBillingAddress1, "field 'tvBillingAddress1'", TextViewLight.class);
+    target.tvBillingAddress2 = Utils.findRequiredViewAsType(source, R.id.tvBillingAddress2, "field 'tvBillingAddress2'", TextViewLight.class);
+    target.tvBillingCityPin = Utils.findRequiredViewAsType(source, R.id.tvBillingCityPin, "field 'tvBillingCityPin'", TextViewLight.class);
+    target.tvBillingCountryState = Utils.findRequiredViewAsType(source, R.id.tvBillingCountryState, "field 'tvBillingCountryState'", TextViewLight.class);
+    target.tvShippingCompanyName = Utils.findRequiredViewAsType(source, R.id.tvShippingCompanyName, "field 'tvShippingCompanyName'", TextViewLight.class);
+    target.tvShippingName = Utils.findRequiredViewAsType(source, R.id.tvShippingName, "field 'tvShippingName'", TextViewLight.class);
+    target.tvShippingAddress1 = Utils.findRequiredViewAsType(source, R.id.tvShippingAddress1, "field 'tvShippingAddress1'", TextViewLight.class);
+    target.tvShippingAddress2 = Utils.findRequiredViewAsType(source, R.id.tvShippingAddress2, "field 'tvShippingAddress2'", TextViewLight.class);
+    target.tvShippingCityPin = Utils.findRequiredViewAsType(source, R.id.tvShippingCityPin, "field 'tvShippingCityPin'", TextViewLight.class);
+    target.tvShippingCountryState = Utils.findRequiredViewAsType(source, R.id.tvShippingCountryState, "field 'tvShippingCountryState'", TextViewLight.class);
+    view = Utils.findRequiredView(source, R.id.tvCancelOrder, "field 'tvCancelOrder' and method 'setTvCancelOrderClick'");
+    target.tvCancelOrder = Utils.castView(view, R.id.tvCancelOrder, "field 'tvCancelOrder'", TextViewBold.class);
+    view2131296794 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.setTvCancelOrderClick();
+      }
+    });
+    target.rvOrderedContent = Utils.findRequiredViewAsType(source, R.id.rvOrderedContent, "field 'rvOrderedContent'", RecyclerView.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    OrderDetailActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.tvOrderId = null;
+    target.tvOrderDateAndStatus = null;
+    target.tvTrackMessage1 = null;
+    target.tvTrackMessage2 = null;
+    target.tvTrackID = null;
+    target.tvSubTotal = null;
+    target.tvShippingCharges = null;
+    target.tvPaymentMethodTitle = null;
+    target.tvTotal = null;
+    target.tvEmail = null;
+    target.tvPhone = null;
+    target.tvBillingCompanyName = null;
+    target.tvBillingName = null;
+    target.tvBillingAddress1 = null;
+    target.tvBillingAddress2 = null;
+    target.tvBillingCityPin = null;
+    target.tvBillingCountryState = null;
+    target.tvShippingCompanyName = null;
+    target.tvShippingName = null;
+    target.tvShippingAddress1 = null;
+    target.tvShippingAddress2 = null;
+    target.tvShippingCityPin = null;
+    target.tvShippingCountryState = null;
+    target.tvCancelOrder = null;
+    target.rvOrderedContent = null;
+
+    view2131296911.setOnClickListener(null);
+    view2131296911 = null;
+    view2131296794.setOnClickListener(null);
+    view2131296794 = null;
+  }
+}

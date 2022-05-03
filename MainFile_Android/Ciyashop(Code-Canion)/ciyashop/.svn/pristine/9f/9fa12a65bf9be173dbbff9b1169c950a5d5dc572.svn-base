@@ -1,0 +1,164 @@
+package com.potenza.ciyashop_cloths.utils;
+
+/**
+ * Created by Bhumi Shah on 11/21/2017.
+ */
+
+public class URLS {
+
+    public static final String CONSUMERKEY = "RYp4JquQV0ga";
+    public static final String CONSUMERSECRET = "j7rKc22Uofx2PKXpBJVGYd2JLQIu6PyWwgrpP16NUUnsJW1a";
+    public static final String WOOCONSUMERKEY = "ck_abf26d37d0092bbe0d5b7675823ce1deb9af0af3";
+    public static final String WOOCONSUMERSECRET = "cs_2cab9c4028139724b451f06ac6c988feb8475851";
+
+    public static final String OAUTH_TOKEN = "ScgdPcozfk1OC20PRfWx67Se";
+    public static final String OAUTH_TOKEN_SECRET = "e6oECDXfmKdz71HYM6ZUhiofzV2duZnLthOI0RF97j4SM8Zb";
+
+    public final String APP_URL = "http://ciyashop.potenzaglobalsolutions.com/";
+    public final String WOO_MAIN_URL = APP_URL + "wp-json/wc/v2/";
+    public final String MAIN_URL = APP_URL + "wp-json/pgs-woo-api/v1/";
+
+    /* Nimesh Data*/
+//    public static final String WOOCONSUMERKEY = "ck_003f787df5edaa23d0867e14f5da2fc6dae321de";
+//
+//    public static final String WOOCONSUMERSECRET = "cs_312890f6dac20e9f37e32b86e95340e57232567a";
+//
+//    public static final String CONSUMERKEY = "KZIuevFoQOTi";
+//
+//    public static final String CONSUMERSECRET = "0SohFCdOZjpWQlVAfuHM6IZ0MSHarnn4tcCXyGOFcHNFjY4a";
+//
+//    public static final String OAUTH_TOKEN = "Sn06cWK05gCYpQByFRksFOmj";
+//
+//    public static final String OAUTH_TOKEN_SECRET = "jf9ekIRrjjGZtilG10v2KK3a2QKgBLk2npejWVTZEz44U8LT";
+
+
+    /* Electronics Data*/
+//    public static final String WOOCONSUMERKEY = "ck_2a4450d07cd2fe3d437f6fb2ccb0792c0080ac46";
+//
+//    public static final String WOOCONSUMERSECRET = "cs_0f1d2bef78ea589642a9e9f9c7dc9ee1de84dae7";
+//
+//    public static final String CONSUMERKEY = "n5irDF5Z2euA";
+//
+//    public static final String CONSUMERSECRET = "g3ZNUeDG5Wxx7UBTVXa0Zw3cy0x0giVEsjioEl5v6kwhHyz3";
+//
+//    public static final String OAUTH_TOKEN = "AdTg7GGVncFU5HZjSbUqyGi6";
+//
+//    public static final String OAUTH_TOKEN_SECRET = "ilBIgLAu1df0nDhUxrirX9LKpnCIOs7ldyuxMA9KAMuu8mgU";
+
+
+    /* Jewelery Data*/
+//    public static final String WOOCONSUMERKEY = "ck_82739576f73b6bac55e46a07d51ba110fecf3e04";
+//
+//    public static final String WOOCONSUMERSECRET = "cs_24b301341d89d9135537db01ffb6ea0ebb3268d3";
+//
+//    public static final String CONSUMERKEY = "mVDOkGxG34du";
+//
+//    public static final String CONSUMERSECRET = "lrQPKBAHDFROwBBBDpY9LeEfA17taSNbDIKwXvSrT6PRkrpF";
+//
+//    public static final String OAUTH_TOKEN = "1J4dtLgQ5Py4G1GqkbZclEg5";
+//
+//    public static final String OAUTH_TOKEN_SECRET = "DFO1SfbFJi54jh3UhvZwz7JvW1By1Ax62AFwjSPyFbkaVklV";
+
+
+
+
+    /* Nimesh Data*/
+//    public final String WOO_MAIN_URL = "http://192.168.0.153/ciya-shop-testing-demo/wp-json/wc/v2/";
+//
+//    public final String MAIN_URL = "http://192.168.0.153/ciya-shop-testing-demo/wp-json/pgs-woo-api/v1/";
+
+
+    //    /* Electronics Sir Data*/
+//    public final String WOO_MAIN_URL = "http://themes.potenzaglobalsolutions.com/ciya-shop-electronics-wp/wp-json/wc/v2/";
+//
+//    public final String MAIN_URL = "http://themes.potenzaglobalsolutions.com/ciya-shop-electronics-wp/wp-json/pgs-woo-api/v1/";
+
+
+    //    /* Jewelery Sir Data*/
+//    public final String WOO_MAIN_URL = "http://themes.potenzaglobalsolutions.com/ciya-shop-jewellery-wp/wp-json/wc/v2/";
+//
+//    public final String MAIN_URL = "http://themes.potenzaglobalsolutions.com/ciya-shop-jewellery-wp/wp-json/pgs-woo-api/v1/";
+
+    public final String PRODUCT_URL = MAIN_URL + "products";
+
+    public final String ATTRIBUTES = MAIN_URL + "attributes";
+
+    public final String HOME = MAIN_URL + "home";
+
+    public final String WOO_VARIATION = "variations";
+
+    public final String WOO_REVIEWS = "reviews";
+
+    public final String WOO_PRODUCT_URL = "products";
+
+    public final String WOO_COUPONS = "coupons";
+
+    public final String WOO_CUSTOMERS = "customers";
+
+    public final String LOGIN = MAIN_URL + "login";
+
+    public final String SOCIAL_SIGNUP = MAIN_URL + "social_signup";
+
+    public final String SOCIAL_LOGIN = MAIN_URL + "social_login";
+
+    public final String CREATE_CUSTOMER = MAIN_URL + "create_customer";
+
+    public final String CONTACTUS = MAIN_URL + "contactus";
+
+    public final String CANCEL_ORDER = MAIN_URL + "cancel_order";
+
+    public final String ORDERS = MAIN_URL + "orders";
+
+    public final String STATIC_PAGES = MAIN_URL + "static_page";
+
+    public final String SELLER = MAIN_URL + "seller";
+
+    public final String CONTACT_SELLER = MAIN_URL + "contact_seller";
+
+    public final String CUSTOMER = MAIN_URL + "customer";
+
+    public final String FINDLOCATION = MAIN_URL + "findGeolocation";
+
+    public final String INFO_PAGES = MAIN_URL + "info_pages";
+
+    public final String UPDATE_USER_IMAGE = MAIN_URL + "update_user_image";
+
+    public final String UPDATE_CUSTOMER = MAIN_URL + "update_customer";
+
+    public final String DEACTIVATE_USER = MAIN_URL + "deactivate_user";
+
+    public final String RESET_PASSWORD = MAIN_URL + "reset_password";
+
+    public final String PUSH_NOTIFICATION = MAIN_URL + "push_notifications";
+
+    public final String ADD_TO_CART = MAIN_URL + "add_to_cart";
+
+    public final String RATING = MAIN_URL + "postreview";
+
+    public final String LOGOUT = MAIN_URL + "logout";
+
+    public final String FORGET_PASSWORD = MAIN_URL + "forgot_password";
+
+    public final String UPDATE_PASSWORD = MAIN_URL + "update_password";
+
+    public final String REMOVE_FROM_WISHLIST = MAIN_URL + "remove_wishlist";
+
+    public final String ADD_TO_WISHLIST = MAIN_URL + "add_wishlist";
+
+    public final String WISHLIST = MAIN_URL + "wishlist";
+
+    public final String DELETE_NOTIFICATIONS = MAIN_URL + "delete_notifications";
+
+    public final String NOTIFICATIONSTATUS = MAIN_URL + "notifications_status";
+
+    public final String REWARDS = MAIN_URL + "coupons";
+
+    public final String SCRATCH_COUPON = MAIN_URL + "scratch_coupon";
+
+    public final String GEOFENCING = MAIN_URL + "findGeolocation";
+
+    public final String ADDNOTIFICATION = MAIN_URL + "add_notifications";
+
+    public final String REWARDSPOINT = MAIN_URL + "rewardspoints";
+
+}

@@ -1,0 +1,48 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.adapter;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewLight;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewMedium;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class MyOrderAdapter$RecentViewHolde_ViewBinding implements Unbinder {
+  private MyOrderAdapter.RecentViewHolde target;
+
+  @UiThread
+  public MyOrderAdapter$RecentViewHolde_ViewBinding(MyOrderAdapter.RecentViewHolde target,
+      View source) {
+    this.target = target;
+
+    target.llMain = Utils.findRequiredViewAsType(source, R.id.llMain, "field 'llMain'", LinearLayout.class);
+    target.ivImage = Utils.findRequiredViewAsType(source, R.id.ivImage, "field 'ivImage'", ImageView.class);
+    target.tvTitle = Utils.findRequiredViewAsType(source, R.id.tvTitle, "field 'tvTitle'", TextViewRegular.class);
+    target.tvStatus = Utils.findRequiredViewAsType(source, R.id.tvStatus, "field 'tvStatus'", TextViewMedium.class);
+    target.tvStatusDesc = Utils.findRequiredViewAsType(source, R.id.tvStatusDesc, "field 'tvStatusDesc'", TextViewLight.class);
+    target.tvOrderDateAndId = Utils.findRequiredViewAsType(source, R.id.tvOrderDateAndId, "field 'tvOrderDateAndId'", TextViewLight.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    MyOrderAdapter.RecentViewHolde target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.llMain = null;
+    target.ivImage = null;
+    target.tvTitle = null;
+    target.tvStatus = null;
+    target.tvStatusDesc = null;
+    target.tvOrderDateAndId = null;
+  }
+}

@@ -1,0 +1,47 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.ImageView;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewLight;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewMedium;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class ProductQuickDetailActivity_ViewBinding implements Unbinder {
+  private ProductQuickDetailActivity target;
+
+  @UiThread
+  public ProductQuickDetailActivity_ViewBinding(ProductQuickDetailActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public ProductQuickDetailActivity_ViewBinding(ProductQuickDetailActivity target, View source) {
+    this.target = target;
+
+    target.tvSubTitle = Utils.findRequiredViewAsType(source, R.id.tvSubTitle, "field 'tvSubTitle'", TextViewMedium.class);
+    target.ivProduct = Utils.findRequiredViewAsType(source, R.id.ivProduct, "field 'ivProduct'", ImageView.class);
+    target.tvProductName = Utils.findRequiredViewAsType(source, R.id.tvProductName, "field 'tvProductName'", TextViewBold.class);
+    target.tvDescription = Utils.findRequiredViewAsType(source, R.id.tvDescription, "field 'tvDescription'", TextViewLight.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    ProductQuickDetailActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.tvSubTitle = null;
+    target.ivProduct = null;
+    target.tvProductName = null;
+    target.tvDescription = null;
+  }
+}

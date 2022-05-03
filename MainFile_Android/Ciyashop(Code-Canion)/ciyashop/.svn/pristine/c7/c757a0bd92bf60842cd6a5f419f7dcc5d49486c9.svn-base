@@ -1,0 +1,49 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class ThankYouActivity_ViewBinding implements Unbinder {
+  private ThankYouActivity target;
+
+  private View view2131296806;
+
+  @UiThread
+  public ThankYouActivity_ViewBinding(ThankYouActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public ThankYouActivity_ViewBinding(final ThankYouActivity target, View source) {
+    this.target = target;
+
+    View view;
+    view = Utils.findRequiredView(source, R.id.tvContinueShopping, "method 'tvContinueShoppingClick'");
+    view2131296806 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvContinueShoppingClick();
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    target = null;
+
+
+    view2131296806.setOnClickListener(null);
+    view2131296806 = null;
+  }
+}

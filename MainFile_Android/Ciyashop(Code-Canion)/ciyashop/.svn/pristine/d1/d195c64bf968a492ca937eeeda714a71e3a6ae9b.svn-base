@@ -1,0 +1,270 @@
+package com.potenza.ciyashop_cloths.adapter;
+
+
+import android.app.Activity;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.graphics.drawable.ColorDrawable;
+import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
+
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.scratchview.ScratchTextView;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewMedium;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import com.potenza.ciyashop_cloths.interfaces.OnItemClickListner;
+import com.potenza.ciyashop_cloths.javaclasses.FilterSelectedList;
+import com.potenza.ciyashop_cloths.model.Rewards;
+import com.potenza.ciyashop_cloths.model.Success;
+import com.potenza.ciyashop_cloths.utils.BaseActivity;
+import com.potenza.ciyashop_cloths.utils.Constant;
+import com.potenza.ciyashop_cloths.utils.RequestParamUtils;
+import com.potenza.ciyashop_cloths.utils.URLS;
+import com.potenza.ciyashop_cloths.utils.apicall.PostApi;
+import com.potenza.ciyashop_cloths.utils.apicall.interfaces.OnResponseListner;
+
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+/**
+ * Created by User on 16-11-2017.
+ */
+
+public class MyRewardsAdapter extends RecyclerView.Adapter<MyRewardsAdapter.RecentViewHolder> implements OnResponseListner {
+    private List<Rewards.Datum> list = new ArrayList<>();
+    private Activity activity;
+    private OnItemClickListner onItemClickListner;
+    private int width = 0, height = 0;
+
+    public MyRewardsAdapter(Activity activity, OnItemClickListner onItemClickListner) {
+        this.activity = activity;
+        this.onItemClickListner = onItemClickListner;
+    }
+
+
+    public void addAll(List<Rewards.Datum> list) {
+        this.list.addAll(list);
+        getWidthAndHeight();
+        notifyDataSetChanged();
+    }
+
+    public List<Rewards.Datum> getList() {
+        return this.list;
+    }
+
+    @Override
+    public RecentViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.item_reward, parent, false);
+
+        return new RecentViewHolder(itemView);
+    }
+
+    @Override
+    public void onBindViewHolder(RecentViewHolder holder, final int position) {
+
+        holder.llMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setClipboard(activity, list.get(position).code);
+            }
+        });
+
+        holder.tvCouponCode.setText(list.get(position).code.toUpperCase());
+        holder.tvCouponDesc.setText(list.get(position).description);
+
+        if (position % 3 == 0) {
+            holder.llReward.setBackgroundResource(R.drawable.reward1);
+        } else if (position % 3 == 1) {
+            holder.llReward.setBackgroundResource(R.drawable.reward2);
+        } else {
+            holder.llReward.setBackgroundResource(R.drawable.reward3);
+        }
+
+        if (list.get(position).isCouponScratched.equals("no")) {
+            holder.tvScretchText.setVisibility(View.VISIBLE);
+            holder.llScratched.setVisibility(View.GONE);
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showScratchCoupanDialog(list.get(position).code.toUpperCase(), list.get(position).description, position);
+                }
+            });
+
+        } else {
+            holder.tvScretchText.setVisibility(View.GONE);
+            holder.llScratched.setVisibility(View.VISIBLE);
+        }
+
+
+    }
+
+    private void setClipboard(Context context, String text) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.HONEYCOMB) {
+            android.text.ClipboardManager clipboard = (android.text.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+            clipboard.setText(text);
+        } else {
+            android.content.ClipboardManager clipboard = (android.content.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+            android.content.ClipData clip = android.content.ClipData.newPlainText("Copied Text", text);
+            clipboard.setPrimaryClip(clip);
+        }
+
+        Toast.makeText(activity, R.string.coupon_code_is_copied_to_clipboard, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public int getItemCount() {
+        return list.size();
+    }
+
+
+    public class RecentViewHolder extends RecyclerView.ViewHolder {
+
+        @BindView(R.id.llMain)
+        LinearLayout llMain;
+
+        @BindView(R.id.llReward)
+        LinearLayout llReward;
+
+        @BindView(R.id.llScratched)
+        LinearLayout llScratched;
+
+        @BindView(R.id.tvCouponCode)
+        TextViewBold tvCouponCode;
+
+        @BindView(R.id.tvCouponDesc)
+        TextViewRegular tvCouponDesc;
+
+        @BindView(R.id.tvScretchText)
+        TextViewRegular tvScretchText;
+
+
+        public RecentViewHolder(View view) {
+            super(view);
+            ButterKnife.bind(this, view);
+        }
+    }
+
+    public void getWidthAndHeight() {
+        int height_value = activity.getResources().getInteger(R.integer.height);
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        width = displayMetrics.widthPixels / 2 - height_value * 2;
+        height = width / 2 + height_value;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return super.getItemViewType(position);
+    }
+
+
+    //TODO:Show Dialog Of Finish Job
+    public void showScratchCoupanDialog(String code, String discount, final int position) {
+        final Dialog dialog = new Dialog(activity, android.R.style.Theme_Light);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.layout_scratch_card);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        final ScratchTextView scratch_view = dialog.findViewById(R.id.scratch_view);
+        ImageView ivClose = dialog.findViewById(R.id.ivClose);
+        ivClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        TextViewBold tvCouponCode = dialog.findViewById(R.id.tvCouponCode);
+        TextViewMedium tvCouponDesc = dialog.findViewById(R.id.tvCouponDesc);
+        tvCouponCode.setText(code + "");
+        tvCouponDesc.setText(discount + "");
+        scratch_view.setRevealListener(new ScratchTextView.IRevealListener() {
+            @Override
+            public void onRevealed(ScratchTextView tv) {
+                if ( Constant.DEVICE_TOKEN == null || Constant.DEVICE_TOKEN.equals("") ) {
+                    String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+                    Constant.DEVICE_TOKEN = refreshedToken;
+                }
+                scretched(false, Constant.DEVICE_TOKEN, list.get(position).id + "", position);
+
+            }
+
+            @Override
+            public void onRevealPercentChangedListener(ScratchTextView stv, float percent) {
+                // on percent reveal.
+            }
+        });
+        dialog.show();
+    }
+
+    public void scretched(Boolean dialog, String devicetoken, String couponid, int position) {
+        PostApi postApi = new PostApi(activity, "scretched-" + position, this);
+        try {
+            JSONObject jsonObject;
+            if (FilterSelectedList.filterJson.equals("")) {
+                jsonObject = new JSONObject();
+            } else {
+                jsonObject = new JSONObject(FilterSelectedList.filterJson);
+            }
+            jsonObject.put(RequestParamUtils.COUPON_ID, couponid);
+            jsonObject.put(RequestParamUtils.ISCOUPON_SCRATCH, "yes");
+            jsonObject.put(RequestParamUtils.DEVICE_TOKEN, devicetoken);
+            jsonObject.put(RequestParamUtils.USER_ID, ((BaseActivity) activity).getPreferences().getString(RequestParamUtils.ID, ""));
+            postApi.setisDialogShow(dialog);
+            postApi.callPostApi(new URLS().SCRATCH_COUPON, jsonObject.toString());
+        } catch (Exception e) {
+            Log.e("Json Exception", e.getMessage());
+        }
+
+//        GetApi getApi = new GetApi(this, "coupons", this);
+//        getApi.setisDialogShow(dialog);
+//        getApi.callGetApi(new URLS().WOO_MAIN_URL + new URLS().WOO_COUPONS + "?page=" + page);
+    }
+
+    @Override
+    public void onResponse(String response, String methodName) {
+        Log.e(methodName + "Response is ", response);
+        if (methodName.contains("scretched")) {
+            if (response != null && response.length() > 0 && !response.equals("null")) {
+                if (methodName.contains("-")) {
+                    String[] array = methodName.split("-");
+                    if (array.length > 0) {
+                        try {
+                            int position = Integer.parseInt(array[1]);
+                            Success rewardsRider = new Gson().fromJson(
+                                    response, new TypeToken<Success>() {
+                                    }.getType());
+                            if (rewardsRider.status.equals("success")) {
+//                                Toast.makeText(activity, rewardsRider.message, Toast.LENGTH_LONG).show();
+                                list.get(position).isCouponScratched = "yes";
+                                notifyDataSetChanged();
+                            }
+
+                        } catch (Exception e) {
+                            Log.e("Exception is ", e.getMessage());
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}

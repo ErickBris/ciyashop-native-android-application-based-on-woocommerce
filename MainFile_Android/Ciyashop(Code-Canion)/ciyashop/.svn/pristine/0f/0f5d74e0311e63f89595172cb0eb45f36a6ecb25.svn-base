@@ -1,0 +1,69 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.ImageView;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.iarcuschin.simpleratingbar.SimpleRatingBar;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.edittext.EditTextRegular;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class RateAndReviewActivity_ViewBinding implements Unbinder {
+  private RateAndReviewActivity target;
+
+  private View view2131296901;
+
+  @UiThread
+  public RateAndReviewActivity_ViewBinding(RateAndReviewActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public RateAndReviewActivity_ViewBinding(final RateAndReviewActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.rating = Utils.findRequiredViewAsType(source, R.id.rating, "field 'rating'", SimpleRatingBar.class);
+    target.tvProductName = Utils.findRequiredViewAsType(source, R.id.tvProductName, "field 'tvProductName'", TextViewRegular.class);
+    target.ivProductImage = Utils.findRequiredViewAsType(source, R.id.ivProductImage, "field 'ivProductImage'", ImageView.class);
+    target.etUsername = Utils.findRequiredViewAsType(source, R.id.etUserName, "field 'etUsername'", EditTextRegular.class);
+    target.etEmail = Utils.findRequiredViewAsType(source, R.id.etEmail, "field 'etEmail'", EditTextRegular.class);
+    target.etComment = Utils.findRequiredViewAsType(source, R.id.etComment, "field 'etComment'", EditTextRegular.class);
+    view = Utils.findRequiredView(source, R.id.tvSubmit, "field 'tvSubmit' and method 'submitClick'");
+    target.tvSubmit = Utils.castView(view, R.id.tvSubmit, "field 'tvSubmit'", TextViewBold.class);
+    view2131296901 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.submitClick();
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    RateAndReviewActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.rating = null;
+    target.tvProductName = null;
+    target.ivProductImage = null;
+    target.etUsername = null;
+    target.etEmail = null;
+    target.etComment = null;
+    target.tvSubmit = null;
+
+    view2131296901.setOnClickListener(null);
+    view2131296901 = null;
+  }
+}

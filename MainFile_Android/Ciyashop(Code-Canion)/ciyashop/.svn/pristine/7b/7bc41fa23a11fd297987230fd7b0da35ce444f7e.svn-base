@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/value_5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/value_5"
+        android:layout_marginRight="@dimen/value_5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                android:id="@+id/tvRatting"
+                style="@style/txt_white_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_corner_round_button"
+                android:drawablePadding="@dimen/value_3"
+                android:drawableRight="@drawable/ic_star_white"
+                android:gravity="center"
+                android:paddingBottom="@dimen/value_1"
+                android:paddingLeft="@dimen/value_5"
+                android:paddingRight="@dimen/value_5"
+                android:paddingTop="@dimen/value_1"
+                android:text="5" />
+
+            <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                android:id="@+id/tvName"
+                style="@style/txt_gray_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_8"
+                android:gravity="left|center"
+                android:text="Ankita Dholariya" />
+
+        </LinearLayout>
+
+        <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+            android:id="@+id/tvReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_3"
+            android:text="Best t-shirt  i have  got.... love it:)" />
+
+        <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+            android:id="@+id/tvTime"
+            style="@style/txt_gray_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_3"
+            android:text="November 13, 2017" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_0.5"
+        android:layout_marginTop="@dimen/value_5"
+        android:background="@color/gray_light" />
+
+</LinearLayout>

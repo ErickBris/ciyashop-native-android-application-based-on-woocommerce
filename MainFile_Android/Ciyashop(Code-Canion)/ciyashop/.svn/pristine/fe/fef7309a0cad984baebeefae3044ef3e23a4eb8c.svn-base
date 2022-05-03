@@ -1,0 +1,79 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.LinearLayout;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.edittext.EditTextRegular;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class ChangePasswordActivity_ViewBinding implements Unbinder {
+  private ChangePasswordActivity target;
+
+  private View view2131296870;
+
+  private View view2131296793;
+
+  @UiThread
+  public ChangePasswordActivity_ViewBinding(ChangePasswordActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public ChangePasswordActivity_ViewBinding(final ChangePasswordActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.etEmail = Utils.findRequiredViewAsType(source, R.id.etEmail, "field 'etEmail'", EditTextRegular.class);
+    target.etOldPassword = Utils.findRequiredViewAsType(source, R.id.etOldPassword, "field 'etOldPassword'", EditTextRegular.class);
+    target.etNewPassword = Utils.findRequiredViewAsType(source, R.id.etNewPassword, "field 'etNewPassword'", EditTextRegular.class);
+    target.etConfirrmNewPassword = Utils.findRequiredViewAsType(source, R.id.etConfirrmNewPassword, "field 'etConfirrmNewPassword'", EditTextRegular.class);
+    view = Utils.findRequiredView(source, R.id.tvSave, "field 'tvSave' and method 'tvSaveClick'");
+    target.tvSave = Utils.castView(view, R.id.tvSave, "field 'tvSave'", TextViewRegular.class);
+    view2131296870 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvSaveClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvCancel, "field 'tvCancel' and method 'tvCancelClick'");
+    target.tvCancel = Utils.castView(view, R.id.tvCancel, "field 'tvCancel'", TextViewRegular.class);
+    view2131296793 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvCancelClick();
+      }
+    });
+    target.llButton = Utils.findRequiredViewAsType(source, R.id.llButton, "field 'llButton'", LinearLayout.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    ChangePasswordActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.etEmail = null;
+    target.etOldPassword = null;
+    target.etNewPassword = null;
+    target.etConfirrmNewPassword = null;
+    target.tvSave = null;
+    target.tvCancel = null;
+    target.llButton = null;
+
+    view2131296870.setOnClickListener(null);
+    view2131296870 = null;
+    view2131296793.setOnClickListener(null);
+    view2131296793 = null;
+  }
+}

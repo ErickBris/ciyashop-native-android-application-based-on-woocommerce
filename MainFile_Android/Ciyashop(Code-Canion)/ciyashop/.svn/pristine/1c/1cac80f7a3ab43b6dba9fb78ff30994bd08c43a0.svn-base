@@ -1,0 +1,141 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.ImageView;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.edittext.EditTextRegular;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class ContactUsActivity_ViewBinding implements Unbinder {
+  private ContactUsActivity target;
+
+  private View view2131296509;
+
+  private View view2131296518;
+
+  private View view2131296496;
+
+  private View view2131296502;
+
+  private View view2131296498;
+
+  private View view2131296877;
+
+  @UiThread
+  public ContactUsActivity_ViewBinding(ContactUsActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public ContactUsActivity_ViewBinding(final ContactUsActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.etName = Utils.findRequiredViewAsType(source, R.id.etName, "field 'etName'", EditTextRegular.class);
+    target.etEmail = Utils.findRequiredViewAsType(source, R.id.etEmail, "field 'etEmail'", EditTextRegular.class);
+    target.etContactNumber = Utils.findRequiredViewAsType(source, R.id.etContactNumber, "field 'etContactNumber'", EditTextRegular.class);
+    target.etSubject = Utils.findRequiredViewAsType(source, R.id.etSubject, "field 'etSubject'", EditTextRegular.class);
+    target.etMessage = Utils.findRequiredViewAsType(source, R.id.etMessage, "field 'etMessage'", EditTextRegular.class);
+    view = Utils.findRequiredView(source, R.id.ivPinterest, "field 'ivPinterest' and method 'ivPinterestClick'");
+    target.ivPinterest = Utils.castView(view, R.id.ivPinterest, "field 'ivPinterest'", ImageView.class);
+    view2131296509 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.ivPinterestClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ivTwitter, "field 'ivTwitter' and method 'ivTwitterClick'");
+    target.ivTwitter = Utils.castView(view, R.id.ivTwitter, "field 'ivTwitter'", ImageView.class);
+    view2131296518 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.ivTwitterClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ivFacebook, "field 'ivFacebook' and method 'ivFacebookClick'");
+    target.ivFacebook = Utils.castView(view, R.id.ivFacebook, "field 'ivFacebook'", ImageView.class);
+    view2131296496 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.ivFacebookClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ivLinkedin, "field 'ivLinkedin' and method 'ivLinkedinClick'");
+    target.ivLinkedin = Utils.castView(view, R.id.ivLinkedin, "field 'ivLinkedin'", ImageView.class);
+    view2131296502 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.ivLinkedinClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ivGooglePlus, "field 'ivGooglePlus' and method 'ivGooglePlusClick'");
+    target.ivGooglePlus = Utils.castView(view, R.id.ivGooglePlus, "field 'ivGooglePlus'", ImageView.class);
+    view2131296498 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.ivGooglePlusClick();
+      }
+    });
+    target.ivLocation = Utils.findRequiredViewAsType(source, R.id.ivLocation, "field 'ivLocation'", ImageView.class);
+    target.ivPhone = Utils.findRequiredViewAsType(source, R.id.ivPhone, "field 'ivPhone'", ImageView.class);
+    view = Utils.findRequiredView(source, R.id.tvSend, "field 'tvSend' and method 'tvSendClick'");
+    target.tvSend = Utils.castView(view, R.id.tvSend, "field 'tvSend'", TextViewBold.class);
+    view2131296877 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvSendClick();
+      }
+    });
+    target.Logo = Utils.findRequiredViewAsType(source, R.id.Logo, "field 'Logo'", ImageView.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    ContactUsActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.etName = null;
+    target.etEmail = null;
+    target.etContactNumber = null;
+    target.etSubject = null;
+    target.etMessage = null;
+    target.ivPinterest = null;
+    target.ivTwitter = null;
+    target.ivFacebook = null;
+    target.ivLinkedin = null;
+    target.ivGooglePlus = null;
+    target.ivLocation = null;
+    target.ivPhone = null;
+    target.tvSend = null;
+    target.Logo = null;
+
+    view2131296509.setOnClickListener(null);
+    view2131296509 = null;
+    view2131296518.setOnClickListener(null);
+    view2131296518 = null;
+    view2131296496.setOnClickListener(null);
+    view2131296496 = null;
+    view2131296502.setOnClickListener(null);
+    view2131296502 = null;
+    view2131296498.setOnClickListener(null);
+    view2131296498 = null;
+    view2131296877.setOnClickListener(null);
+    view2131296877 = null;
+  }
+}

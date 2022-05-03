@@ -1,0 +1,41 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.adapter;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewLight;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class SellerReviewAdapter$ReviewHolder_ViewBinding implements Unbinder {
+  private SellerReviewAdapter.ReviewHolder target;
+
+  @UiThread
+  public SellerReviewAdapter$ReviewHolder_ViewBinding(SellerReviewAdapter.ReviewHolder target,
+      View source) {
+    this.target = target;
+
+    target.tvName = Utils.findRequiredViewAsType(source, R.id.tvName, "field 'tvName'", TextViewRegular.class);
+    target.tvRatting = Utils.findRequiredViewAsType(source, R.id.tvRatting, "field 'tvRatting'", TextViewRegular.class);
+    target.tvReview = Utils.findRequiredViewAsType(source, R.id.tvReview, "field 'tvReview'", TextViewRegular.class);
+    target.tvTime = Utils.findRequiredViewAsType(source, R.id.tvTime, "field 'tvTime'", TextViewLight.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    SellerReviewAdapter.ReviewHolder target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.tvName = null;
+    target.tvRatting = null;
+    target.tvReview = null;
+    target.tvTime = null;
+  }
+}

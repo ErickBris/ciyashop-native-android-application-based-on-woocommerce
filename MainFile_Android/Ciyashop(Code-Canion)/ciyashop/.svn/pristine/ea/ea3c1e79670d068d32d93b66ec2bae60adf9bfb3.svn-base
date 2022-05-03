@@ -1,0 +1,137 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.edittext.EditTextRegular;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class AccountSettingActivity_ViewBinding implements Unbinder {
+  private AccountSettingActivity target;
+
+  private View view2131296417;
+
+  private View view2131296870;
+
+  private View view2131296452;
+
+  private View view2131296450;
+
+  private View view2131296797;
+
+  private View view2131296815;
+
+  @UiThread
+  public AccountSettingActivity_ViewBinding(AccountSettingActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public AccountSettingActivity_ViewBinding(final AccountSettingActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.etFirstName = Utils.findRequiredViewAsType(source, R.id.etFirstName, "field 'etFirstName'", EditTextRegular.class);
+    target.etLastName = Utils.findRequiredViewAsType(source, R.id.etLastName, "field 'etLastName'", EditTextRegular.class);
+    view = Utils.findRequiredView(source, R.id.etDOB, "field 'etDOB' and method 'etDOBClick'");
+    target.etDOB = Utils.castView(view, R.id.etDOB, "field 'etDOB'", EditTextRegular.class);
+    view2131296417 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.etDOBClick();
+      }
+    });
+    target.etMobileNumber = Utils.findRequiredViewAsType(source, R.id.etMobileNumber, "field 'etMobileNumber'", EditTextRegular.class);
+    target.tvEmail = Utils.findRequiredViewAsType(source, R.id.tvEmail, "field 'tvEmail'", TextViewRegular.class);
+    view = Utils.findRequiredView(source, R.id.tvSave, "field 'tvSave' and method 'tvSaveClick'");
+    target.tvSave = Utils.castView(view, R.id.tvSave, "field 'tvSave'", TextViewRegular.class);
+    view2131296870 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvSaveClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.flMale, "field 'flMale' and method 'flMaleClick'");
+    target.flMale = Utils.castView(view, R.id.flMale, "field 'flMale'", FrameLayout.class);
+    view2131296452 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.flMaleClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.flFemale, "field 'flFemale' and method 'flFemaleClick'");
+    target.flFemale = Utils.castView(view, R.id.flFemale, "field 'flFemale'", FrameLayout.class);
+    view2131296450 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.flFemaleClick();
+      }
+    });
+    target.ivRightMale = Utils.findRequiredViewAsType(source, R.id.ivRightMale, "field 'ivRightMale'", ImageView.class);
+    target.ivRightFemale = Utils.findRequiredViewAsType(source, R.id.ivRightFemale, "field 'ivRightFemale'", ImageView.class);
+    view = Utils.findRequiredView(source, R.id.tvChangePassword, "field 'tvChangePassword' and method 'tvChangePasswordClick'");
+    target.tvChangePassword = Utils.castView(view, R.id.tvChangePassword, "field 'tvChangePassword'", TextViewBold.class);
+    view2131296797 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvChangePasswordClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvDeactivateAccount, "method 'tvDeactivateAccountClick'");
+    view2131296815 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvDeactivateAccountClick();
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    AccountSettingActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.etFirstName = null;
+    target.etLastName = null;
+    target.etDOB = null;
+    target.etMobileNumber = null;
+    target.tvEmail = null;
+    target.tvSave = null;
+    target.flMale = null;
+    target.flFemale = null;
+    target.ivRightMale = null;
+    target.ivRightFemale = null;
+    target.tvChangePassword = null;
+
+    view2131296417.setOnClickListener(null);
+    view2131296417 = null;
+    view2131296870.setOnClickListener(null);
+    view2131296870 = null;
+    view2131296452.setOnClickListener(null);
+    view2131296452 = null;
+    view2131296450.setOnClickListener(null);
+    view2131296450 = null;
+    view2131296797.setOnClickListener(null);
+    view2131296797 = null;
+    view2131296815.setOnClickListener(null);
+    view2131296815 = null;
+  }
+}

@@ -1,0 +1,275 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.v4.view.ViewPager;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.like.animation.SparkButton;
+import com.potenza.ciyashop_cloths.customview.progressbar.RoundCornerProgressBar;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewLight;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class ProductDetailActivity_ViewBinding implements Unbinder {
+  private ProductDetailActivity target;
+
+  private View view2131296876;
+
+  private View view2131296875;
+
+  private View view2131296802;
+
+  private View view2131296795;
+
+  private View view2131296792;
+
+  private View view2131296519;
+
+  private View view2131296837;
+
+  private View view2131296836;
+
+  private View view2131296920;
+
+  private View view2131296862;
+
+  private View view2131296516;
+
+  private View view2131296544;
+
+  @UiThread
+  public ProductDetailActivity_ViewBinding(ProductDetailActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public ProductDetailActivity_ViewBinding(final ProductDetailActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.vpProductImages = Utils.findRequiredViewAsType(source, R.id.vpProductImages, "field 'vpProductImages'", ViewPager.class);
+    target.rvColor = Utils.findRequiredViewAsType(source, R.id.rvColor, "field 'rvColor'", RecyclerView.class);
+    target.rvReview = Utils.findRequiredViewAsType(source, R.id.rvReview, "field 'rvReview'", RecyclerView.class);
+    target.rvGroupProduct = Utils.findRequiredViewAsType(source, R.id.rvGroupProduct, "field 'rvGroupProduct'", RecyclerView.class);
+    target.layoutDots = Utils.findRequiredViewAsType(source, R.id.layoutDots, "field 'layoutDots'", LinearLayout.class);
+    target.llColor = Utils.findRequiredViewAsType(source, R.id.llColor, "field 'llColor'", LinearLayout.class);
+    target.tvColor = Utils.findRequiredViewAsType(source, R.id.tvColor, "field 'tvColor'", TextViewRegular.class);
+    target.tvProductName = Utils.findRequiredViewAsType(source, R.id.tvProductName, "field 'tvProductName'", TextViewBold.class);
+    target.rattingFive = Utils.findRequiredViewAsType(source, R.id.rattingFive, "field 'rattingFive'", RoundCornerProgressBar.class);
+    target.rattingFour = Utils.findRequiredViewAsType(source, R.id.rattingFour, "field 'rattingFour'", RoundCornerProgressBar.class);
+    target.rattingThree = Utils.findRequiredViewAsType(source, R.id.rattingThree, "field 'rattingThree'", RoundCornerProgressBar.class);
+    target.rattingTwo = Utils.findRequiredViewAsType(source, R.id.rattingTwo, "field 'rattingTwo'", RoundCornerProgressBar.class);
+    target.rattingOne = Utils.findRequiredViewAsType(source, R.id.rattingOne, "field 'rattingOne'", RoundCornerProgressBar.class);
+    target.tvAverageRatting = Utils.findRequiredViewAsType(source, R.id.tvAverageRatting, "field 'tvAverageRatting'", TextViewRegular.class);
+    target.tvAvailibility = Utils.findRequiredViewAsType(source, R.id.tvAvailibility, "field 'tvAvailibility'", TextViewRegular.class);
+    target.tvRatting = Utils.findRequiredViewAsType(source, R.id.tvRatting, "field 'tvRatting'", TextViewRegular.class);
+    target.llIsSeller = Utils.findRequiredViewAsType(source, R.id.llIsSeller, "field 'llIsSeller'", LinearLayout.class);
+    view = Utils.findRequiredView(source, R.id.tvSellerName, "field 'tvSellerName' and method 'tvSellerNameClick'");
+    target.tvSellerName = Utils.castView(view, R.id.tvSellerName, "field 'tvSellerName'", TextViewLight.class);
+    view2131296876 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvSellerNameClick();
+      }
+    });
+    target.tvSellerContent = Utils.findRequiredViewAsType(source, R.id.tvSellerContent, "field 'tvSellerContent'", TextViewLight.class);
+    view = Utils.findRequiredView(source, R.id.tvSellerMore, "field 'tvSellerMore' and method 'tvSellerMoreClick'");
+    target.tvSellerMore = Utils.castView(view, R.id.tvSellerMore, "field 'tvSellerMore'", TextViewLight.class);
+    view2131296875 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvSellerMoreClick();
+      }
+    });
+    target.llQuickOverView = Utils.findRequiredViewAsType(source, R.id.llQuickOverView, "field 'llQuickOverView'", LinearLayout.class);
+    target.tvDescription = Utils.findRequiredViewAsType(source, R.id.tvDescription, "field 'tvDescription'", TextViewLight.class);
+    target.llProductDescription = Utils.findRequiredViewAsType(source, R.id.llProductDescription, "field 'llProductDescription'", LinearLayout.class);
+    target.tvProductDescription = Utils.findRequiredViewAsType(source, R.id.tvProductDescription, "field 'tvProductDescription'", TextViewLight.class);
+    target.llReview = Utils.findRequiredViewAsType(source, R.id.llReview, "field 'llReview'", LinearLayout.class);
+    view = Utils.findRequiredView(source, R.id.tvContactSeller, "field 'tvContactSeller' and method 'tvContactSellerClick'");
+    target.tvContactSeller = Utils.castView(view, R.id.tvContactSeller, "field 'tvContactSeller'", TextViewRegular.class);
+    view2131296802 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvContactSellerClick();
+      }
+    });
+    target.tvFive = Utils.findRequiredViewAsType(source, R.id.tvFive, "field 'tvFive'", TextViewRegular.class);
+    target.tvFour = Utils.findRequiredViewAsType(source, R.id.tvFour, "field 'tvFour'", TextViewRegular.class);
+    target.tvThree = Utils.findRequiredViewAsType(source, R.id.tvThree, "field 'tvThree'", TextViewRegular.class);
+    target.tvTwo = Utils.findRequiredViewAsType(source, R.id.tvTwo, "field 'tvTwo'", TextViewRegular.class);
+    target.tvOne = Utils.findRequiredViewAsType(source, R.id.tvOne, "field 'tvOne'", TextViewRegular.class);
+    view = Utils.findRequiredView(source, R.id.tvCart, "field 'tvCart' and method 'tvCartClick'");
+    target.tvCart = Utils.castView(view, R.id.tvCart, "field 'tvCart'", TextViewBold.class);
+    view2131296795 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvCartClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvBuyNow, "field 'tvBuyNow' and method 'tvBuyNowClick'");
+    target.tvBuyNow = Utils.castView(view, R.id.tvBuyNow, "field 'tvBuyNow'", TextViewBold.class);
+    view2131296792 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvBuyNowClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ivWishList, "field 'ivWishList' and method 'ivWishListClick'");
+    target.ivWishList = Utils.castView(view, R.id.ivWishList, "field 'ivWishList'", SparkButton.class);
+    view2131296519 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.ivWishListClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvMoreQuickOverview, "field 'tvMoreQuickOverview' and method 'tvMoreQuickOverviewClick'");
+    target.tvMoreQuickOverview = Utils.castView(view, R.id.tvMoreQuickOverview, "field 'tvMoreQuickOverview'", TextViewLight.class);
+    view2131296837 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvMoreQuickOverviewClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvMoreDetail, "field 'tvMoreDetail' and method 'tvMoreDetailClick'");
+    target.tvMoreDetail = Utils.castView(view, R.id.tvMoreDetail, "field 'tvMoreDetail'", TextViewLight.class);
+    view2131296836 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvMoreDetailClick();
+      }
+    });
+    target.llratting = Utils.findRequiredViewAsType(source, R.id.llratting, "field 'llratting'", LinearLayout.class);
+    target.ivQuickOverViewMore = Utils.findRequiredViewAsType(source, R.id.ivQuickOverViewMore, "field 'ivQuickOverViewMore'", ImageView.class);
+    target.ivDetailMore = Utils.findRequiredViewAsType(source, R.id.ivDetailMore, "field 'ivDetailMore'", ImageView.class);
+    target.ivMoreSeller = Utils.findRequiredViewAsType(source, R.id.ivMoreSeller, "field 'ivMoreSeller'", ImageView.class);
+    view = Utils.findRequiredView(source, R.id.tvViewStore, "field 'tvViewStore' and method 'tvViewStoreClick'");
+    target.tvViewStore = Utils.castView(view, R.id.tvViewStore, "field 'tvViewStore'", TextViewRegular.class);
+    view2131296920 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvViewStoreClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvRateReview, "field 'tvRateReview' and method 'RateReviewClick'");
+    target.tvRateReview = Utils.castView(view, R.id.tvRateReview, "field 'tvRateReview'", TextViewRegular.class);
+    view2131296862 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.RateReviewClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ivShare, "method 'ivShareClick'");
+    view2131296516 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.ivShareClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.llDialog, "method 'lLDialogClick'");
+    view2131296544 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.lLDialogClick();
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    ProductDetailActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.vpProductImages = null;
+    target.rvColor = null;
+    target.rvReview = null;
+    target.rvGroupProduct = null;
+    target.layoutDots = null;
+    target.llColor = null;
+    target.tvColor = null;
+    target.tvProductName = null;
+    target.rattingFive = null;
+    target.rattingFour = null;
+    target.rattingThree = null;
+    target.rattingTwo = null;
+    target.rattingOne = null;
+    target.tvAverageRatting = null;
+    target.tvAvailibility = null;
+    target.tvRatting = null;
+    target.llIsSeller = null;
+    target.tvSellerName = null;
+    target.tvSellerContent = null;
+    target.tvSellerMore = null;
+    target.llQuickOverView = null;
+    target.tvDescription = null;
+    target.llProductDescription = null;
+    target.tvProductDescription = null;
+    target.llReview = null;
+    target.tvContactSeller = null;
+    target.tvFive = null;
+    target.tvFour = null;
+    target.tvThree = null;
+    target.tvTwo = null;
+    target.tvOne = null;
+    target.tvCart = null;
+    target.tvBuyNow = null;
+    target.ivWishList = null;
+    target.tvMoreQuickOverview = null;
+    target.tvMoreDetail = null;
+    target.llratting = null;
+    target.ivQuickOverViewMore = null;
+    target.ivDetailMore = null;
+    target.ivMoreSeller = null;
+    target.tvViewStore = null;
+    target.tvRateReview = null;
+
+    view2131296876.setOnClickListener(null);
+    view2131296876 = null;
+    view2131296875.setOnClickListener(null);
+    view2131296875 = null;
+    view2131296802.setOnClickListener(null);
+    view2131296802 = null;
+    view2131296795.setOnClickListener(null);
+    view2131296795 = null;
+    view2131296792.setOnClickListener(null);
+    view2131296792 = null;
+    view2131296519.setOnClickListener(null);
+    view2131296519 = null;
+    view2131296837.setOnClickListener(null);
+    view2131296837 = null;
+    view2131296836.setOnClickListener(null);
+    view2131296836 = null;
+    view2131296920.setOnClickListener(null);
+    view2131296920 = null;
+    view2131296862.setOnClickListener(null);
+    view2131296862 = null;
+    view2131296516.setOnClickListener(null);
+    view2131296516 = null;
+    view2131296544.setOnClickListener(null);
+    view2131296544 = null;
+  }
+}

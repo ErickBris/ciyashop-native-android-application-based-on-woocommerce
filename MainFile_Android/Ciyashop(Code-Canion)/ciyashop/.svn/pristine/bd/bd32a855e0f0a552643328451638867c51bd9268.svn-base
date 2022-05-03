@@ -1,0 +1,50 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.LinearLayout;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewLight;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class RewardsActivity_ViewBinding implements Unbinder {
+  private RewardsActivity target;
+
+  @UiThread
+  public RewardsActivity_ViewBinding(RewardsActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public RewardsActivity_ViewBinding(RewardsActivity target, View source) {
+    this.target = target;
+
+    target.rvMyRewards = Utils.findRequiredViewAsType(source, R.id.rvMyRewards, "field 'rvMyRewards'", RecyclerView.class);
+    target.llEmpty = Utils.findRequiredViewAsType(source, R.id.llEmpty, "field 'llEmpty'", LinearLayout.class);
+    target.tvEmptyTitle = Utils.findRequiredViewAsType(source, R.id.tvEmptyTitle, "field 'tvEmptyTitle'", TextViewBold.class);
+    target.tvEmptyDesc = Utils.findRequiredViewAsType(source, R.id.tvEmptyDesc, "field 'tvEmptyDesc'", TextViewLight.class);
+    target.tvContinueShopping = Utils.findRequiredViewAsType(source, R.id.tvContinueShopping, "field 'tvContinueShopping'", TextViewRegular.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    RewardsActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.rvMyRewards = null;
+    target.llEmpty = null;
+    target.tvEmptyTitle = null;
+    target.tvEmptyDesc = null;
+    target.tvContinueShopping = null;
+  }
+}

@@ -1,0 +1,1275 @@
+# Copyright (C) 2016 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: PGS Woo Api 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2018-07-04 16:27+0530\n"
+"PO-Revision-Date: 2018-07-04 17:19+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;_ex;_n;_nx;_n_noop;_nx_noop;"
+"translate_nooped_plural;esc_html__;esc_html_e;esc_html_x;esc_attr__;"
+"esc_attr_e;esc_attr_x;number_format_i18n;date_i18n\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: endpoints/class-pgs-woo-api-attributes-controller.php:230
+#: endpoints/class-pgs-woo-api-products-controller.php:254
+#: inc/classes/class-pgs-woo-api-controller.php:103
+#: inc/classes/class-pgs-woo-api-controller.php:229
+msgid "No product found"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-cart-controller.php:56
+msgid "Sorry, that is not valid input. You missed cart_items parameters"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-cart-controller.php:117
+msgid "Cart is empty"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:65
+msgid "Please enter your name"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:72
+msgid "Please enter subject"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:78
+#: endpoints/class-pgs-woo-api-deactiveuser-controller.php:75
+#: endpoints/class-pgs-woo-api-login-controller.php:71
+#: endpoints/class-pgs-woo-api-login-controller.php:175
+msgid "Please enter your email"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:84
+#: endpoints/class-pgs-woo-api-login-controller.php:94
+#: endpoints/class-pgs-woo-api-login-controller.php:197
+msgid "Please enter valid email address"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:89
+msgid "Message can't be blank"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:111
+#, php-format
+msgid "Message from %s contact us form"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:112
+msgid "User Details : "
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:113
+#, php-format
+msgid "Name : %s"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:114
+#, php-format
+msgid "Email : %s"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:115
+#, php-format
+msgid "Subject : %s"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:116
+#, php-format
+msgid "Contact No : %s"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:117
+msgid "Message : "
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:132
+#: endpoints/class-pgs-woo-api-password-controller.php:189
+#: endpoints/class-pgs-woo-api-seller-controller.php:538
+msgid "The e-mail could not be sent.Please try after some time."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-contactus-controller.php:138
+msgid ""
+"Your email was successfully sent. We will contact you as soon as possible"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-coupons-controller.php:79
+msgid "Result successfully fetched"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-coupons-controller.php:90
+msgid "No Coupons found"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-coupons-controller.php:225
+msgid "Coupon scratched successfully."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-deactiveuser-controller.php:69
+#: endpoints/class-pgs-woo-api-login-controller.php:66
+msgid "Please enter your email and password"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-deactiveuser-controller.php:81
+#: endpoints/class-pgs-woo-api-login-controller.php:77
+msgid "Please enter your password"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-deactiveuser-controller.php:88
+#: endpoints/class-pgs-woo-api-login-controller.php:110
+msgid "Please enter valid email or password"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-deactiveuser-controller.php:95
+msgid "You are not allowed to do that"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-deactiveuser-controller.php:103
+msgid "Your account successfully deactivated"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-deactiveuser-controller.php:149
+msgid "Account disabled"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-geofencing-controller.php:66
+msgid "Somthing went wrong!"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-geofencing-controller.php:113
+#: endpoints/class-pgs-woo-api-rewards-points-controller.php:97
+msgid "Result not found!"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-info-pages-controller.php:84
+msgid "No data found!"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-login-controller.php:89
+msgid "email does not exist"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-login-controller.php:105
+#: endpoints/class-pgs-woo-api-login-controller.php:213
+msgid ""
+"You are currently deactivated. Please contact to admin for active account"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-login-controller.php:180
+msgid "Something went wrong. Please try later"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-login-controller.php:205
+#: endpoints/class-pgs-woo-api-login-controller.php:218
+#: endpoints/class-pgs-woo-api-login-controller.php:260
+#: endpoints/class-pgs-woo-api-password-controller.php:78
+#: endpoints/class-pgs-woo-api-password-controller.php:92
+#: endpoints/class-pgs-woo-api-password-controller.php:143
+#: endpoints/class-pgs-woo-api-password-controller.php:151
+#: endpoints/class-pgs-woo-api-password-controller.php:226
+#: endpoints/class-pgs-woo-api-password-controller.php:241
+#: endpoints/class-pgs-woo-api-password-controller.php:262
+msgid "Something went wrong. Please try later."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-login-controller.php:292
+#: endpoints/class-pgs-woo-api-user-controller.php:181
+#: endpoints/class-pgs-woo-api-user-controller.php:285
+msgid "Email already exists"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-login-controller.php:297
+#: endpoints/class-pgs-woo-api-user-controller.php:186
+#: endpoints/class-pgs-woo-api-user-controller.php:290
+msgid "Password required"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-logout-controller.php:53
+msgid "User logged out successfully"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-orders-controller.php:194
+msgid "No orders found"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-orders-controller.php:200
+msgid "User not logged in"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-orders-controller.php:222
+msgid "Your order was shipped via"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-orders-controller.php:223
+msgid "Tracking number is"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-orders-controller.php:342
+#: endpoints/class-pgs-woo-api-orders-controller.php:350
+msgid "Order status changed to Cancelled"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-orders-controller.php:355
+msgid "fail"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-orders-controller.php:356
+msgid "This Order status not is On-Hold or Pending"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-password-controller.php:84
+#: endpoints/class-pgs-woo-api-password-controller.php:232
+msgid "Please enter password."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-password-controller.php:104
+#: endpoints/class-pgs-woo-api-password-controller.php:162
+#: endpoints/class-pgs-woo-api-password-controller.php:252
+msgid "password reset not allowed!"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-password-controller.php:108
+#: endpoints/class-pgs-woo-api-password-controller.php:166
+#: endpoints/class-pgs-woo-api-password-controller.php:256
+msgid "An error occurred!"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-password-controller.php:115
+#: endpoints/class-pgs-woo-api-password-controller.php:270
+msgid "Your password has been reset."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-password-controller.php:174
+msgid "Someone requested that the password be reset for the following account:"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-password-controller.php:175
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-password-controller.php:176
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-password-controller.php:184
+#, php-format
+msgid "[%s] Password Reset"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-password-controller.php:194
+msgid ""
+"Key for password reset has been emailed to you. Please check your email."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-products-controller.php:492
+#: endpoints/class-pgs-woo-api-products-controller.php:493
+msgid "Placeholder"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-push-notification-controller.php:86
+msgid "Notification added successfully"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-push-notification-controller.php:89
+#: endpoints/class-pgs-woo-api-push-notification-controller.php:139
+#: endpoints/class-pgs-woo-api-push-notification-controller.php:215
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:135
+msgid "Something went wrong"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-push-notification-controller.php:135
+msgid "No data found"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-push-notification-controller.php:174
+msgid "Record deleted successfully"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-push-notification-controller.php:177
+msgid "Record cannot be deleted. Please try after sometime!"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-push-notification-controller.php:181
+#: endpoints/class-pgs-woo-api-seller-controller.php:470
+#: endpoints/class-pgs-woo-api-seller-controller.php:507
+msgid "Something went wrong!"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-push-notification-controller.php:212
+msgid "Notification status updated successfully"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-reviews-controller.php:93
+msgid "Please input 1 to 5 in rate star."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-reviews-controller.php:97
+msgid "Please type a comment."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-reviews-controller.php:162
+msgid "Sorry, you must be logged in to comment."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-reviews-controller.php:170
+#: endpoints/class-pgs-woo-api-reviews-controller.php:182
+msgid "Creating a comment requires valid author name and email values."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-reviews-controller.php:233
+msgid "Comment added successfully."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-reviews-controller.php:239
+msgid "Products are not allowed to comment."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-seller-controller.php:296
+msgid "External Store URL"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-seller-controller.php:385
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-seller-controller.php:457
+#: endpoints/class-pgs-woo-api-seller-controller.php:462
+#: endpoints/class-pgs-woo-api-seller-controller.php:495
+#: endpoints/class-pgs-woo-api-seller-controller.php:500
+msgid "Please provide your name."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-seller-controller.php:478
+#: endpoints/class-pgs-woo-api-seller-controller.php:548
+msgid "Email sent successfully!"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-seller-controller.php:536
+#, php-format
+msgid "Customer support alert form %s"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-seller-controller.php:542
+msgid "Something went wrong. Please try after some time."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-static-pages-controller.php:78
+msgid "page not set"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-static-pages-controller.php:82
+msgid "invalid page name"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-static-pages-controller.php:86
+msgid "Please pass static page name"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-user-controller.php:86
+msgid "Profile image updated successfully"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-user-controller.php:88
+msgid "Invalid image type"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-user-controller.php:93
+msgid "Please upload image"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-user-controller.php:176
+msgid "Username already exists"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-user-controller.php:523
+msgid "User updated successfully"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:63
+msgid "Sorry, that is not valid input. You missed user_id parameters"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:82
+msgid "No data for sync."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:117
+msgid "No record found."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:175
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:375
+msgid "An error occurred while adding products to the wishlist."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:259
+msgid "Product added!"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:263
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:465
+msgid "An error occurred while adding products to wishlist."
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:389
+msgid "exists"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:459
+msgid "Product added successfully"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:475
+msgid "You need to login before creating a new wishlist"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:622
+msgid "Product deleted successfully"
+msgstr ""
+
+#: endpoints/class-pgs-woo-api-wishlist-controller.php:627
+msgid "An error occurred while removing products from the wishlist"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-controller.php:36
+msgid "Sorry, that is not valid input. You missed "
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-controller.php:607
+msgid "Cancellation/Return/Exchange Policy"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-controller.php:608
+msgid "Refund Policy"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-controller.php:609
+msgid "Shipping Policy"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-test-controller.php:49
+msgid "PGS Woo Api working fine"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:42
+msgid "Click on below button to start token generation process"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:45
+msgid "Let's go!"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:53
+msgid "Verification token"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:60
+msgid ""
+"Try to re submit. if still not get final token and token secret then refresh "
+"this page and do it again."
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:64
+msgid "Click on below link to get authorization token."
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:66
+msgid "Get verification token"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:68
+msgid ""
+"Onces you click above link, it will redirect you to new tab which will "
+"prompt to authorize API, On clicking \"Authorize\" button, you will get "
+"verification token. Copy that token and paste it to below \"Verification "
+"Token\" input box."
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:70
+msgid "Verification Token"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:75
+msgid "Continue"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:81
+msgid "You're ready to call API."
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:92
+#: inc/options-pages/setting_page.php:130
+#: inc/options-pages/setting_page.php:384
+msgid "Token"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:96
+#: inc/options-pages/setting_page.php:134
+#: inc/options-pages/setting_page.php:385
+msgid "Token Secret"
+msgstr ""
+
+#: inc/classes/class-pgs-woo-api-token-generations-controller.php:158
+msgid "Please enter verification token."
+msgstr ""
+
+#: inc/meta-box/add_abandon_cart_meta.php:4
+msgid "Abandoned From"
+msgstr ""
+
+#: inc/meta-box/add_abandon_cart_meta.php:60
+msgid "Abandon cart alert!"
+msgstr ""
+
+#: inc/meta-box/add_coupon_meta.php:3
+msgid "Push notification"
+msgstr ""
+
+#: inc/meta-box/add_coupon_meta.php:3
+msgid "Send push notification to all users"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:22
+msgid "Mobile"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:30
+msgid "Gender"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:33
+msgid "Male"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:36
+msgid "Female"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:41
+msgid "DOB"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:49
+msgid "Deactivate User"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:52
+msgid "User can't login if deactivate"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:140
+msgid "Custom User Profile Image"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:144
+msgid "Profile Image"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:161
+msgid "Upload"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:162 inc/options-pages/option_page.php:87
+#: inc/options-pages/option_page.php:145 inc/options-pages/option_page.php:291
+#: inc/options-pages/option_page.php:379 inc/options-pages/option_page.php:487
+#: inc/options-pages/option_page.php:609 inc/options-pages/option_page.php:1009
+msgid "Remove"
+msgstr ""
+
+#: inc/meta-box/add_user_meta.php:166
+msgid "Upload a custom image for your user profile"
+msgstr ""
+
+#: inc/meta-box/pgs_custom_cat_thumbmail.php:21
+#: inc/meta-box/pgs_custom_cat_thumbmail.php:64
+msgid "App Category Thumbnail"
+msgstr ""
+
+#: inc/meta-box/pgs_custom_cat_thumbmail.php:38
+#: inc/meta-box/pgs_custom_cat_thumbmail.php:81
+msgid "Upload/Add App cat image"
+msgstr ""
+
+#: inc/meta-box/pgs_custom_cat_thumbmail.php:39
+#: inc/meta-box/pgs_custom_cat_thumbmail.php:82
+msgid "Remove image"
+msgstr ""
+
+#: inc/meta-box/pgs_custom_cat_thumbmail.php:42
+msgid "Enter a value for this field"
+msgstr ""
+
+#: inc/meta-box/pgs_custom_cat_thumbmail.php:84
+msgid "Add mobile application category image"
+msgstr ""
+
+#: inc/meta-box/pgs_custom_cat_thumbmail.php:113
+msgid "App Image"
+msgstr ""
+
+#: inc/meta-box/pgs_custom_colorpiker.php:21
+#: inc/meta-box/pgs_custom_colorpiker.php:45
+msgid "Color Code"
+msgstr ""
+
+#: inc/meta-box/pgs_custom_colorpiker.php:77
+msgid "Color"
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:8 inc/options-pages/geo-fencing.php:9
+#: inc/options-pages/geo-fencing.php:10 inc/options-pages/geo-fencing.php:11
+#: inc/options-pages/geo-fencing.php:58
+msgid "Geofencing"
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:12
+msgid "Add New"
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:13
+msgid "Add New Geofencing"
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:14
+msgid "New Geofencing"
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:15
+msgid "Edit Geofencing"
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:16
+msgid "View Geofencing"
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:17
+msgid "All Geofencing"
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:18
+msgid "Search Geofencing"
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:19
+msgid "Parent Geofencing:"
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:20
+msgid "No geofencing found."
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:21
+msgid "No geofencing found in Trash."
+msgstr ""
+
+#: inc/options-pages/geo-fencing.php:26
+msgid "Description."
+msgstr ""
+
+#: inc/options-pages/option_functions.php:104
+#: inc/options-pages/option_functions.php:225
+msgid "Settings saved."
+msgstr ""
+
+#: inc/options-pages/option_functions.php:120
+msgid "The file "
+msgstr ""
+
+#: inc/options-pages/option_functions.php:120
+msgid " has been uploaded."
+msgstr ""
+
+#: inc/options-pages/option_functions.php:126
+#: inc/options-pages/option_functions.php:132
+msgid "Sorry, there was an error uploading your file."
+msgstr ""
+
+#: inc/options-pages/option_page.php:26
+msgid "App Settings"
+msgstr ""
+
+#: inc/options-pages/option_page.php:31
+msgid "Save Changes"
+msgstr ""
+
+#: inc/options-pages/option_page.php:40 inc/options-pages/option_page.php:58
+msgid "Primary Logo"
+msgstr ""
+
+#: inc/options-pages/option_page.php:41 inc/options-pages/option_page.php:114
+msgid "Secondary Logo"
+msgstr ""
+
+#: inc/options-pages/option_page.php:42 inc/options-pages/option_page.php:172
+msgid "App Color"
+msgstr ""
+
+#: inc/options-pages/option_page.php:43 inc/options-pages/option_page.php:223
+msgid "Main Category Menu"
+msgstr ""
+
+#: inc/options-pages/option_page.php:44 inc/options-pages/option_page.php:327
+msgid "Home Slider Banner"
+msgstr ""
+
+#: inc/options-pages/option_page.php:45 inc/options-pages/option_page.php:434
+msgid "Category Banners"
+msgstr ""
+
+#: inc/options-pages/option_page.php:46 inc/options-pages/option_page.php:554
+msgid "Banner Ads"
+msgstr ""
+
+#: inc/options-pages/option_page.php:47 inc/options-pages/option_page.php:945
+msgid "Feature Box"
+msgstr ""
+
+#: inc/options-pages/option_page.php:48 inc/options-pages/option_page.php:664
+msgid "App Pages"
+msgstr ""
+
+#: inc/options-pages/option_page.php:49
+msgid "Checkout Page"
+msgstr ""
+
+#: inc/options-pages/option_page.php:50
+msgid "Social Links"
+msgstr ""
+
+#: inc/options-pages/option_page.php:51 inc/options-pages/option_page.php:1058
+msgid "Contact Info"
+msgstr ""
+
+#: inc/options-pages/option_page.php:59
+msgid "Logo display on the header of the app."
+msgstr ""
+
+#: inc/options-pages/option_page.php:61 inc/options-pages/option_page.php:119
+#: inc/options-pages/option_page.php:329 inc/options-pages/option_page.php:436
+#: inc/options-pages/option_page.php:556 inc/options-pages/option_page.php:979
+msgid "IMPORTANT"
+msgstr ""
+
+#: inc/options-pages/option_page.php:62 inc/options-pages/option_page.php:120
+msgid ""
+"For best performance and image quality in the mobile application, strictly "
+"follow the below standards for logo images:"
+msgstr ""
+
+#: inc/options-pages/option_page.php:64 inc/options-pages/option_page.php:122
+msgid "Dimension: "
+msgstr ""
+
+#: inc/options-pages/option_page.php:64 inc/options-pages/option_page.php:122
+msgid "164 x 51"
+msgstr ""
+
+#: inc/options-pages/option_page.php:65 inc/options-pages/option_page.php:123
+msgid "File Type: "
+msgstr ""
+
+#: inc/options-pages/option_page.php:65 inc/options-pages/option_page.php:123
+msgid "PNG"
+msgstr ""
+
+#: inc/options-pages/option_page.php:78 inc/options-pages/option_page.php:136
+#: inc/options-pages/option_page.php:277 inc/options-pages/option_page.php:370
+#: inc/options-pages/option_page.php:478 inc/options-pages/option_page.php:600
+#: inc/options-pages/option_page.php:1000
+msgid "Edit"
+msgstr ""
+
+#: inc/options-pages/option_page.php:84 inc/options-pages/option_page.php:142
+#: inc/options-pages/option_page.php:282 inc/options-pages/option_page.php:288
+#: inc/options-pages/option_page.php:376 inc/options-pages/option_page.php:484
+#: inc/options-pages/option_page.php:606 inc/options-pages/option_page.php:1006
+#: inc/woo-api-functions.php:412
+msgid "Add Image"
+msgstr ""
+
+#: inc/options-pages/option_page.php:116
+msgid "Logo display on other app pages like About Us and Contact Us."
+msgstr ""
+
+#: inc/options-pages/option_page.php:172
+msgid "You can change app default color and set as per your app design."
+msgstr ""
+
+#: inc/options-pages/option_page.php:176
+msgid "Header Color"
+msgstr ""
+
+#: inc/options-pages/option_page.php:184
+msgid "Primary Color"
+msgstr ""
+
+#: inc/options-pages/option_page.php:192
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/options-pages/option_page.php:225
+msgid "Categories menu items display on the home screen."
+msgstr ""
+
+#: inc/options-pages/option_page.php:244
+msgid "Select category menu item"
+msgstr ""
+
+#: inc/options-pages/option_page.php:246 inc/options-pages/option_page.php:385
+#: inc/options-pages/option_page.php:500 inc/options-pages/option_page.php:615
+msgid "Select"
+msgstr ""
+
+#: inc/options-pages/option_page.php:265
+msgid "Category Icon Image"
+msgstr ""
+
+#: inc/options-pages/option_page.php:300 inc/options-pages/option_page.php:408
+#: inc/options-pages/option_page.php:523 inc/options-pages/option_page.php:638
+#: inc/options-pages/option_page.php:793 inc/options-pages/option_page.php:1031
+msgid "Add"
+msgstr ""
+
+#: inc/options-pages/option_page.php:328
+msgid "These banners display as a slider on the home screen."
+msgstr ""
+
+#: inc/options-pages/option_page.php:333
+msgid ""
+"For best performance and image quality of slider banners in the mobile "
+"application, strictly use <strong>1125 x 633</strong> (WidthxHeight in px) "
+"image for slider banners."
+msgstr ""
+
+#: inc/options-pages/option_page.php:360
+msgid "Slider Image"
+msgstr ""
+
+#: inc/options-pages/option_page.php:383 inc/options-pages/option_page.php:498
+msgid "Select Product Category"
+msgstr ""
+
+#: inc/options-pages/option_page.php:435
+msgid "Banners displayed on the home screen."
+msgstr ""
+
+#: inc/options-pages/option_page.php:440
+msgid ""
+"For best performance and image quality of category banners in the mobile "
+"application, strictly use <strong>420 x 305</strong> (WidthxHeight in px) "
+"image for category banners."
+msgstr ""
+
+#: inc/options-pages/option_page.php:468 inc/options-pages/option_page.php:590
+msgid "Banner Image"
+msgstr ""
+
+#: inc/options-pages/option_page.php:492
+msgid "Banner Title"
+msgstr ""
+
+#: inc/options-pages/option_page.php:555
+msgid "Used for advertisement or special offers, displayed on Home screen."
+msgstr ""
+
+#: inc/options-pages/option_page.php:560
+msgid ""
+"For best performance and image quality of Ad banners in the mobile "
+"application, strictly use <strong>1080 x 353</strong> (WidthxHeight in px) "
+"image for banners."
+msgstr ""
+
+#: inc/options-pages/option_page.php:613
+msgid "Category for Banner Ad"
+msgstr ""
+
+#: inc/options-pages/option_page.php:665
+msgid "App custom pages."
+msgstr ""
+
+#: inc/options-pages/option_page.php:678
+msgid "About Us"
+msgstr ""
+
+#: inc/options-pages/option_page.php:680 inc/options-pages/option_page.php:703
+#: inc/options-pages/option_page.php:725 inc/options-pages/option_page.php:769
+#: inc/options-pages/option_page.php:824
+msgid "Select page"
+msgstr ""
+
+#: inc/options-pages/option_page.php:701
+msgid "Terms & Conditions"
+msgstr ""
+
+#: inc/options-pages/option_page.php:723
+msgid "Privacy Policy"
+msgstr ""
+
+#: inc/options-pages/option_page.php:767
+msgid "Add info Pages"
+msgstr ""
+
+#: inc/options-pages/option_page.php:819
+msgid "Checkout Page Setting"
+msgstr ""
+
+#: inc/options-pages/option_page.php:820
+msgid ""
+"Checkout page in any e-commerce website plays the most crucial part as it is "
+"the online equivalent of a physical checkout counter shown to the customer "
+"during the step by step checkout process. Hence, it needs to be appealing "
+"enough. Ciya shop comes with a feature that you can personalize this page as "
+"well. Although the user is having the default page to use they can enhance "
+"their checkout page according to their choice anytime they want by going to "
+"'Checkout Page' option in 'App settings' and selecting the page they have "
+"created."
+msgstr ""
+
+#: inc/options-pages/option_page.php:822
+msgid "Select Checkout Page"
+msgstr ""
+
+#: inc/options-pages/option_page.php:877
+msgid "Social Media Settings"
+msgstr ""
+
+#: inc/options-pages/option_page.php:878
+msgid ""
+"Specify social media URLs, where the user redirected once he/she clicks on "
+"social media icons."
+msgstr ""
+
+#: inc/options-pages/option_page.php:890
+msgid "Facebook"
+msgstr ""
+
+#: inc/options-pages/option_page.php:894
+msgid "Twitter"
+msgstr ""
+
+#: inc/options-pages/option_page.php:899
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/options-pages/option_page.php:903
+msgid "Google Plus"
+msgstr ""
+
+#: inc/options-pages/option_page.php:907
+msgid "Pinterest"
+msgstr ""
+
+#: inc/options-pages/option_page.php:912
+msgid "Instagram"
+msgstr ""
+
+#: inc/options-pages/option_page.php:949 inc/options-pages/setting_page.php:181
+#: inc/options-pages/setting_page.php:306
+msgid "Status"
+msgstr ""
+
+#: inc/options-pages/option_page.php:950 inc/options-pages/setting_page.php:182
+msgid "Enable"
+msgstr ""
+
+#: inc/options-pages/option_page.php:951 inc/options-pages/setting_page.php:183
+msgid "Disable"
+msgstr ""
+
+#: inc/options-pages/option_page.php:956
+msgid "Feature Box Title"
+msgstr ""
+
+#: inc/options-pages/option_page.php:978
+msgid "Feature Box Icon Image"
+msgstr ""
+
+#: inc/options-pages/option_page.php:983
+msgid ""
+"For best performance and image quality, strictly use <strong>150 x 150</"
+"strong> (WidthxHeight in px) image for feature box."
+msgstr ""
+
+#: inc/options-pages/option_page.php:1014
+msgid "Title"
+msgstr ""
+
+#: inc/options-pages/option_page.php:1020
+msgid "Content"
+msgstr ""
+
+#: inc/options-pages/option_page.php:1067
+msgid "Address Line 1"
+msgstr ""
+
+#: inc/options-pages/option_page.php:1071
+msgid "Address Line 2"
+msgstr ""
+
+#: inc/options-pages/option_page.php:1076
+msgid "Email"
+msgstr ""
+
+#: inc/options-pages/option_page.php:1080
+msgid "Phone"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:74
+msgid "API Settings"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:76
+msgid "Publish"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:79
+msgid "Update"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:86
+msgid "API Keys"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:87
+msgid "WooCommerce API"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:88
+msgid "Google Maps API"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:89 inc/options-pages/setting_page.php:175
+msgid "Push Notification"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:90 inc/options-pages/setting_page.php:278
+msgid "App URL"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:96 inc/options-pages/setting_page.php:301
+msgid "Vendor Settings"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:103
+#: inc/options-pages/setting_page.php:321
+msgid "Test API"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:104
+#: inc/options-pages/setting_page.php:375
+msgid "Credentials Code"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:111
+#: inc/options-pages/setting_page.php:151
+msgid "OAuth Credentials"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:113
+#: inc/options-pages/setting_page.php:153
+msgid "These credentials are just for the backup purpose."
+msgstr ""
+
+#: inc/options-pages/setting_page.php:118
+#: inc/options-pages/setting_page.php:382
+msgid "Client Key"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:123
+#: inc/options-pages/setting_page.php:383
+msgid "Client Secret"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:158
+#: inc/options-pages/setting_page.php:386
+msgid "Consumer Key"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:162
+#: inc/options-pages/setting_page.php:387
+msgid "Consumer Secret"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:184
+msgid "Enable / Disable Push notification"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:188
+msgid "Mode"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:189
+msgid "Sandbox"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:190
+msgid "Live"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:191
+msgid "IOS Push notification mode"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:195
+msgid "Upload Development Pem File"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:207
+#: inc/options-pages/setting_page.php:228
+msgid "File Upload"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:208
+msgid "Upload IOS Push notification Pem File for development"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:212
+msgid "Password for Development Pem File"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:217
+msgid "Upload Distribution Pem File"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:229
+msgid "Upload IOS Push notification Pem File for production"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:233
+msgid "Password for Distribution Pem File"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:239
+msgid "Android Legacy server key"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:246
+msgid "Coupon code notification title"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:250
+msgid "Coupon code notification message"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:252
+msgid "{{coupon}} add this code for show in notification"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:256
+msgid "Order status notification title"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:260
+msgid "Order status notification message"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:262
+msgid "{{status}}, {{order_id}} add this code for show in notification"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:284
+msgid "IOS App URL"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:307
+msgid "Dokan"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:308
+msgid "WC Marketplace"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:309
+msgid "Please select vendor plugin"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:322
+msgid "Click for check test API."
+msgstr ""
+
+#: inc/options-pages/setting_page.php:329
+msgid "Check"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:343
+msgid "Google Map API"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:347
+#, php-format
+msgid ""
+"You can get a Google Maps API from <a href=\"%1$s\" target=\"_blank\">here.</"
+"a>"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:357
+msgid "Note"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:357
+msgid ""
+"This key used for the geofencing functionality, for initializing google map "
+"using google map API."
+msgstr ""
+
+#: inc/options-pages/setting_page.php:362
+msgid "Google Maps API Key"
+msgstr ""
+
+#: inc/options-pages/setting_page.php:377
+msgid ""
+"Click on respected icons for generate the code of OAuth key and url for "
+"Android and iOS application."
+msgstr ""
+
+#: inc/options-pages/setting_page.php:393
+msgid "is missing"
+msgstr ""
+
+#: inc/woo-api-functions.php:410
+msgid "Are you sure you want to delete this element?"
+msgstr ""
+
+#: inc/woo-api-functions.php:411
+msgid "Choose Image"
+msgstr ""
+
+#: inc/woo-api-functions.php:647
+msgid "Please enter client key, client secret from Users -> Applications"
+msgstr ""
+
+#: pgs-woo-api.php:58
+msgid "PGS Woo Api"
+msgstr ""
+
+#: pgs-woo-api.php:59
+msgid "Requires the following plugins to be activated"
+msgstr ""
+
+#: pgs-woo-api.php:61 pgs-woo-api.php:64 pgs-woo-api.php:67
+msgid "Please"
+msgstr ""
+
+#: pgs-woo-api.php:61 pgs-woo-api.php:64 pgs-woo-api.php:67
+msgid "install / activate"
+msgstr ""
+
+#: pgs-woo-api.php:61 pgs-woo-api.php:64 pgs-woo-api.php:67
+msgid "plugin"
+msgstr ""
+
+#: template/app_checkout.php:95
+msgid "Your cart is empty."
+msgstr ""

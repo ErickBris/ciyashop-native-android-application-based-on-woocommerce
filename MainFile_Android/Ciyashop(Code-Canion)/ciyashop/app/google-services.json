@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "231447107690",
+    "firebase_url": "https://ciyashop-cloths.firebaseio.com",
+    "project_id": "ciyashop-cloths",
+    "storage_bucket": "ciyashop-cloths.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231447107690:android:0f8c9f30518d0214",
+        "android_client_info": {
+          "package_name": "com.example.ciyashop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231447107690-7ehknd5oe6ru68m0iofhbubjujcjh4s4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ciyashop",
+            "certificate_hash": "923163d9ff0ab15655bc3b185945ee70a2fdfb53"
+          }
+        },
+        {
+          "client_id": "231447107690-1akhiccf722q51gdur6699f9ij9bv9et.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnneWqUg-QJlU8kOdVb_r-YtmWqEViPXQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231447107690-1akhiccf722q51gdur6699f9ij9bv9et.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.rangeseekbar.interfaces.widgets.CrystalRangeSeekbar;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class FilterActivity_ViewBinding implements Unbinder {
+  private FilterActivity target;
+
+  private View view2131296507;
+
+  private View view2131296798;
+
+  @UiThread
+  public FilterActivity_ViewBinding(FilterActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public FilterActivity_ViewBinding(final FilterActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.priceseekbar = Utils.findRequiredViewAsType(source, R.id.priceseekbar, "field 'priceseekbar'", CrystalRangeSeekbar.class);
+    target.tvMin = Utils.findRequiredViewAsType(source, R.id.tvMin, "field 'tvMin'", TextViewRegular.class);
+    target.tvMax = Utils.findRequiredViewAsType(source, R.id.tvMax, "field 'tvMax'", TextViewRegular.class);
+    target.llColor = Utils.findRequiredViewAsType(source, R.id.llColor, "field 'llColor'", LinearLayout.class);
+    target.llPrice = Utils.findRequiredViewAsType(source, R.id.llPrice, "field 'llPrice'", LinearLayout.class);
+    target.rvColor = Utils.findRequiredViewAsType(source, R.id.rvColor, "field 'rvColor'", RecyclerView.class);
+    target.rvFilterType = Utils.findRequiredViewAsType(source, R.id.rvFilterType, "field 'rvFilterType'", RecyclerView.class);
+    view = Utils.findRequiredView(source, R.id.ivNotification, "field 'ivNotification' and method 'filterApplyClick'");
+    target.ivNotification = Utils.castView(view, R.id.ivNotification, "field 'ivNotification'", ImageView.class);
+    view2131296507 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.filterApplyClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvClearFilter, "field 'tvClearFilter' and method 'tvClearFilterClick'");
+    target.tvClearFilter = Utils.castView(view, R.id.tvClearFilter, "field 'tvClearFilter'", TextViewRegular.class);
+    view2131296798 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvClearFilterClick();
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    FilterActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.priceseekbar = null;
+    target.tvMin = null;
+    target.tvMax = null;
+    target.llColor = null;
+    target.llPrice = null;
+    target.rvColor = null;
+    target.rvFilterType = null;
+    target.ivNotification = null;
+    target.tvClearFilter = null;
+
+    view2131296507.setOnClickListener(null);
+    view2131296507 = null;
+    view2131296798.setOnClickListener(null);
+    view2131296798 = null;
+  }
+}

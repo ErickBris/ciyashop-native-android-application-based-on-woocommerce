@@ -1,0 +1,209 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.ImageView;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.Switch;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewLight;
+import de.hdodenhof.circleimageview.CircleImageView;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class AccountActivity_ViewBinding implements Unbinder {
+  private AccountActivity target;
+
+  private View view2131296810;
+
+  private View view2131296832;
+
+  private View view2131296636;
+
+  private View view2131296736;
+
+  private View view2131296863;
+
+  private View view2131296777;
+
+  private View view2131296775;
+
+  private View view2131296799;
+
+  private View view2131296838;
+
+  private View view2131296773;
+
+  private View view2131296803;
+
+  private View view2131296839;
+
+  @UiThread
+  public AccountActivity_ViewBinding(AccountActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public AccountActivity_ViewBinding(final AccountActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.tvCustomerName = Utils.findRequiredViewAsType(source, R.id.tvCustomerName, "field 'tvCustomerName'", TextViewBold.class);
+    view = Utils.findRequiredView(source, R.id.tvCurrancy, "field 'tvCurrancy' and method 'tvCurrancyClick'");
+    target.tvCurrancy = Utils.castView(view, R.id.tvCurrancy, "field 'tvCurrancy'", TextViewBold.class);
+    view2131296810 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvCurrancyClick();
+      }
+    });
+    target.tvCustomerPhone = Utils.findRequiredViewAsType(source, R.id.tvCustomerPhone, "field 'tvCustomerPhone'", TextViewLight.class);
+    target.tvCustomerEmail = Utils.findRequiredViewAsType(source, R.id.tvCustomerEmail, "field 'tvCustomerEmail'", TextViewLight.class);
+    view = Utils.findRequiredView(source, R.id.tvLogIn, "field 'tvLogIn' and method 'tvLogInClick'");
+    target.tvLogIn = Utils.castView(view, R.id.tvLogIn, "field 'tvLogIn'", TextViewBold.class);
+    view2131296832 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvLogInClick();
+      }
+    });
+    target.tvCustomerEmailLogin = Utils.findRequiredViewAsType(source, R.id.tvCustomerEmailLogin, "field 'tvCustomerEmailLogin'", TextViewLight.class);
+    view = Utils.findRequiredView(source, R.id.profile_image, "field 'profile_image' and method 'profile_imageClick'");
+    target.profile_image = Utils.castView(view, R.id.profile_image, "field 'profile_image'", CircleImageView.class);
+    view2131296636 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.profile_imageClick();
+      }
+    });
+    target.rvInfoPages = Utils.findRequiredViewAsType(source, R.id.rvInfoPages, "field 'rvInfoPages'", RecyclerView.class);
+    view = Utils.findRequiredView(source, R.id.swNotification, "field 'swNotification' and method 'swNotificationOnCheckedChanged'");
+    target.swNotification = Utils.castView(view, R.id.swNotification, "field 'swNotification'", Switch.class);
+    view2131296736 = view;
+    ((CompoundButton) view).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+      @Override
+      public void onCheckedChanged(CompoundButton p0, boolean p1) {
+        target.swNotificationOnCheckedChanged(p0, p1);
+      }
+    });
+    target.ivEdit = Utils.findRequiredViewAsType(source, R.id.ivEdit, "field 'ivEdit'", ImageView.class);
+    view = Utils.findRequiredView(source, R.id.tvRateUs, "method 'tvRateUsClick'");
+    view2131296863 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvRateUsClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvAddress, "method 'tvAddressClick'");
+    view2131296777 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvAddressClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvAccountSetting, "method 'tvAccountSettingClick'");
+    view2131296775 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvAccountSettingClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvClearHistory, "method 'tvClearHistoryClick'");
+    view2131296799 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvClearHistoryClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvMyOrder, "method 'tvMyOrderClick'");
+    view2131296838 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvMyOrderClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvAboutUs, "method 'tvAboutUsClick'");
+    view2131296773 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvAboutUsClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvContactUs, "method 'tvContactUsClick'");
+    view2131296803 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvContactUsClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvMyRewars, "method 'tvMyRewarsClick'");
+    view2131296839 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvMyRewarsClick();
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    AccountActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.tvCustomerName = null;
+    target.tvCurrancy = null;
+    target.tvCustomerPhone = null;
+    target.tvCustomerEmail = null;
+    target.tvLogIn = null;
+    target.tvCustomerEmailLogin = null;
+    target.profile_image = null;
+    target.rvInfoPages = null;
+    target.swNotification = null;
+    target.ivEdit = null;
+
+    view2131296810.setOnClickListener(null);
+    view2131296810 = null;
+    view2131296832.setOnClickListener(null);
+    view2131296832 = null;
+    view2131296636.setOnClickListener(null);
+    view2131296636 = null;
+    ((CompoundButton) view2131296736).setOnCheckedChangeListener(null);
+    view2131296736 = null;
+    view2131296863.setOnClickListener(null);
+    view2131296863 = null;
+    view2131296777.setOnClickListener(null);
+    view2131296777 = null;
+    view2131296775.setOnClickListener(null);
+    view2131296775 = null;
+    view2131296799.setOnClickListener(null);
+    view2131296799 = null;
+    view2131296838.setOnClickListener(null);
+    view2131296838 = null;
+    view2131296773.setOnClickListener(null);
+    view2131296773 = null;
+    view2131296803.setOnClickListener(null);
+    view2131296803 = null;
+    view2131296839.setOnClickListener(null);
+    view2131296839 = null;
+  }
+}

@@ -1,0 +1,118 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.facebook.login.widget.LoginButton;
+import com.google.android.gms.common.SignInButton;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.edittext.EditTextRegular;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewLight;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class LogInActivity_ViewBinding implements Unbinder {
+  private LogInActivity target;
+
+  private View view2131296841;
+
+  private View view2131296889;
+
+  private View view2131296891;
+
+  private View view2131296892;
+
+  private View view2131296826;
+
+  @UiThread
+  public LogInActivity_ViewBinding(LogInActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public LogInActivity_ViewBinding(final LogInActivity target, View source) {
+    this.target = target;
+
+    View view;
+    view = Utils.findRequiredView(source, R.id.tvNewUser, "field 'tvNewUser' and method 'tvNewUserClick'");
+    target.tvNewUser = Utils.castView(view, R.id.tvNewUser, "field 'tvNewUser'", TextView.class);
+    view2131296841 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvNewUserClick();
+      }
+    });
+    target.google_login_button = Utils.findRequiredViewAsType(source, R.id.google_login_button, "field 'google_login_button'", SignInButton.class);
+    target.fb_login_button = Utils.findRequiredViewAsType(source, R.id.fb_login_button, "field 'fb_login_button'", LoginButton.class);
+    target.etEmail = Utils.findRequiredViewAsType(source, R.id.etEmail, "field 'etEmail'", EditTextRegular.class);
+    target.ivLogo = Utils.findRequiredViewAsType(source, R.id.ivLogo, "field 'ivLogo'", ImageView.class);
+    target.etPass = Utils.findRequiredViewAsType(source, R.id.etPass, "field 'etPass'", EditTextRegular.class);
+    view = Utils.findRequiredView(source, R.id.tvSignIn, "field 'tvSignIn' and method 'tvSignInClick'");
+    target.tvSignIn = Utils.castView(view, R.id.tvSignIn, "field 'tvSignIn'", TextViewLight.class);
+    view2131296889 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvSignInClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvSignInWithGoogle, "method 'tvSignInWithGoogleClick'");
+    view2131296891 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvSignInWithGoogleClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvSignInwithFB, "method 'tvSignInwithFBClick'");
+    view2131296892 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvSignInwithFBClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvForgetPass, "method 'tvForgetPassClick'");
+    view2131296826 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvForgetPassClick();
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    LogInActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.tvNewUser = null;
+    target.google_login_button = null;
+    target.fb_login_button = null;
+    target.etEmail = null;
+    target.ivLogo = null;
+    target.etPass = null;
+    target.tvSignIn = null;
+
+    view2131296841.setOnClickListener(null);
+    view2131296841 = null;
+    view2131296889.setOnClickListener(null);
+    view2131296889 = null;
+    view2131296891.setOnClickListener(null);
+    view2131296891 = null;
+    view2131296892.setOnClickListener(null);
+    view2131296892 = null;
+    view2131296826.setOnClickListener(null);
+    view2131296826 = null;
+  }
+}

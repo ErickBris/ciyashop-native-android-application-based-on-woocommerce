@@ -1,0 +1,3 @@
+# Referenced at C:\Users\ankita\Desktop\Mobile_Android_CiyaShop\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:34
+-keep class com.potenza.ciyashop_cloths.utils.MyApplication { <init>(...); }
+

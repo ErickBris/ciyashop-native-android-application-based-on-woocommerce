@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/vpProductImages"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/value_170" />
+
+
+                            <LinearLayout
+                                android:id="@+id/layoutDots"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/value_20"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="@dimen/value_5"
+                                android:gravity="bottom|center"
+                                android:orientation="horizontal">
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:clipChildren="false"
+                                android:clipToPadding="false"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+
+                                <com.potenza.ciyashop_cloths.customview.like.animation.SparkButton
+                                    android:id="@+id/ivWishList"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:visibility="gone"
+                                    app:sparkbutton_activeImage="@drawable/ic_primary_heart"
+                                    app:sparkbutton_iconSize="22dp"
+                                    app:sparkbutton_inActiveImage="@drawable/ic_gray_heart"
+                                    app:sparkbutton_primaryColor="@color/colorPrimary"
+                                    app:sparkbutton_secondaryColor="@color/colorPrimaryTransperent" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/llColor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/value_5"
+                                android:paddingTop="@dimen/value_5"
+                                android:visibility="gone">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rvColor"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:orientation="vertical"
+                                    android:paddingTop="@dimen/value_5">
+
+
+                                </android.support.v7.widget.RecyclerView>
+
+                                <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                    android:layout_width="@dimen/value_0.5"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/value_2"
+                                    android:layout_marginLeft="@dimen/value_8"
+                                    android:layout_marginRight="@dimen/value_8"
+                                    android:layout_marginTop="@dimen/value_2"
+                                    android:background="@color/gray"
+                                    android:layout_marginStart="@dimen/value_8"
+                                    android:layout_marginEnd="@dimen/value_8" />
+
+                                <LinearLayout
+                                    android:id="@+id/llDialog"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/ic_color_variation" />
+
+                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                        android:id="@+id/tvColor"
+                                        style="@style/txt_gray_micro"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/value_2"
+                                        android:gravity="center"
+                                        android:padding="@dimen/value_2"
+                                        android:text="4 color" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/value_5"
+                                android:background="@color/white"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/value_5"
+                                android:paddingTop="@dimen/value_5"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/value_1"
+                                    android:layout_marginTop="@dimen/value_1"
+
+                                    android:layout_weight="0.8"
+                                    android:orientation="vertical"
+                                    android:paddingTop="@dimen/value_5">
+
+                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewBold
+                                        android:id="@+id/tvProductName"
+                                        style="@style/txt_black_medium"
+                                        android:gravity="start"
+                                        android:textAlignment="viewStart"
+                                        android:textDirection="locale"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Moto G Plus(5th Gen) 32GB" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start|center"
+                                        android:layout_marginBottom="@dimen/value_2"
+                                        android:layout_marginTop="@dimen/value_3"
+                                        android:gravity="start|center"
+                                        android:orientation="horizontal">
+
+                                        <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                            android:id="@+id/tvPrice"
+                                            style="@style/txt_color_primary_medium"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="$59.00" />
+
+
+                                        <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                            android:id="@+id/tvPrice1"
+                                            style="@style/txt_color_primary_medium"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:layout_marginStart="@dimen/value_5" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                            style="@style/txt_gray_micro"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/value_2"
+                                            android:text="@string/availability" />
+
+                                        <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                            android:id="@+id/tvAvailibility"
+                                            style="@style/txt_color_primary_micro"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/value_2"
+                                            android:layout_marginStart="@dimen/value_2"
+                                            android:text="In Stock"
+                                            android:layout_marginLeft="@dimen/value_2" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                    android:layout_width="@dimen/value_0.5"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/value_2"
+                                    android:layout_marginLeft="@dimen/value_8"
+                                    android:layout_marginRight="@dimen/value_8"
+                                    android:layout_marginTop="@dimen/value_2"
+                                    android:background="@color/gray"
+                                    android:layout_marginEnd="@dimen/value_8"
+                                    android:layout_marginStart="@dimen/value_8" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.15"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/ivShare"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/ic_share_gray" />
+
+                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                        android:id="@+id/tvRatting"
+                                        style="@style/txt_white_small"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/value_2"
+                                        android:background="@drawable/gray_corner_button"
+                                        android:drawablePadding="@dimen/value_1"
+                                        android:drawableRight="@drawable/ic_star_white"
+                                        android:gravity="center"
+                                        android:padding="@dimen/value_2"
+                                        android:text="0.0"
+                                        android:singleLine="true"
+                                        android:lines="1"
+                                        android:drawableEnd="@drawable/ic_star_white" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                                android:id="@+id/tvReward"
+                                style="@style/txt_gray_small"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/value_3"
+                                android:layout_marginLeft="@dimen/value_10"
+                                android:layout_marginRight="@dimen/value_10"
+                                android:layout_marginTop="@dimen/value_3"
+                                android:alpha="0.9"
+                                android:layout_gravity="center"
+                                android:gravity="start|center"
+                                android:background="@color/white"
+                                android:padding="@dimen/value_5"
+                                android:layout_marginStart="@dimen/value_10"
+                                android:layout_marginEnd="@dimen/value_10" />
+
+
+                            <LinearLayout
+                                android:id="@+id/llIsSeller"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/value_5"
+                                android:layout_marginTop="@dimen/value_5"
+                                android:background="@color/white"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/value_5"
+                                android:paddingTop="@dimen/value_5"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:paddingTop="@dimen/value_5">
+
+                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/Seller_Information" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/value_3"
+                                        android:orientation="horizontal">
+
+                                        <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                                            style="@style/txt_gray_micro"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/value_1"
+                                            android:layout_marginTop="@dimen/value_1"
+                                            android:text="@string/sold_by" />
+
+
+                                        <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                                            android:id="@+id/tvSellerName"
+                                            style="@style/txt_color_primary_small"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/value_1"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_1"
+                                            android:text=""
+                                            android:layout_marginStart="@dimen/value_5" />
+                                    </LinearLayout>
+
+
+                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                                        android:id="@+id/tvSellerContent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="3"
+                                        android:paddingBottom="@dimen/value_5"
+                                        android:paddingTop="@dimen/value_5"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                                            android:id="@+id/tvSellerMore"
+                                            style="@style/txt_color_primary_small"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="start|center"
+                                            android:gravity="center"
+                                            android:text="@string/more" />
+
+                                        <ImageView
+                                            android:id="@+id/ivMoreSeller"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            app:srcCompat="@drawable/ic_go_primary" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/value_2"
+                                        android:layout_marginTop="@dimen/value_5"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5">
+
+                                            <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                android:id="@+id/tvContactSeller"
+                                                style="@style/txt_white_small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/primary_round_corner_button"
+                                                android:paddingBottom="@dimen/value_4"
+                                                android:paddingLeft="@dimen/value_8"
+                                                android:paddingRight="@dimen/value_8"
+                                                android:paddingTop="@dimen/value_4"
+                                                android:text="@string/contact_seller"
+                                                android:paddingEnd="@dimen/value_8"
+                                                android:paddingStart="@dimen/value_8" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:layout_weight="0.5"
+                                            android:gravity="end">
+
+                                            <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                android:id="@+id/tvViewStore"
+                                                style="@style/txt_white_small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/primary_round_corner_button"
+                                                android:paddingBottom="@dimen/value_4"
+                                                android:paddingLeft="@dimen/value_8"
+                                                android:paddingRight="@dimen/value_8"
+                                                android:paddingTop="@dimen/value_4"
+                                                android:text="@string/view_store"
+                                                android:paddingStart="@dimen/value_8"
+                                                android:paddingEnd="@dimen/value_8" />
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvGroupProduct"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/value_5"
+                                android:layout_marginLeft="@dimen/value_10"
+                                android:layout_marginRight="@dimen/value_10"
+                                android:layout_marginTop="@dimen/value_5"
+                                android:background="@drawable/white_gray_strok_button"
+                                android:visibility="gone"
+                                android:layout_marginStart="@dimen/value_10"
+                                android:layout_marginEnd="@dimen/value_10">
+
+                            </android.support.v7.widget.RecyclerView>
+
+                            <LinearLayout
+                                android:id="@+id/llQuickOverView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/value_5"
+                                android:layout_marginTop="@dimen/value_5"
+                                android:background="@color/bg"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                    style="@style/txt_black_medium"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:padding="@dimen/value_5"
+                                    android:gravity="start"
+                                    android:textAlignment="viewStart"
+                                    android:textDirection="locale"
+                                    android:text="@string/quick_overview" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/value_10"
+                                        android:background="@color/white" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="@dimen/value_5"
+                                        android:layout_marginRight="@dimen/value_5"
+                                        android:background="@color/white"
+                                        android:elevation="@dimen/value_2"
+                                        android:orientation="horizontal"
+                                        android:layout_marginEnd="@dimen/value_5"
+                                        android:layout_marginStart="@dimen/value_5">
+
+                                        <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                            android:layout_width="@dimen/value_0.5"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/gray_table" />
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.99"
+                                            android:orientation="vertical">
+
+                                            <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/value_0.5"
+                                                android:background="@color/gray_table" />
+
+                                            <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                                                android:id="@+id/tvDescription"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:maxLines="3"
+                                                android:padding="@dimen/value_5"
+                                                android:gravity="start"
+                                                android:textAlignment="viewStart"
+                                                android:textDirection="locale"
+                                                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." />
+
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingBottom="@dimen/value_5">
+
+                                                <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                                                    android:id="@+id/tvMoreQuickOverview"
+                                                    style="@style/txt_color_primary_small"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:paddingLeft="@dimen/value_5"
+                                                    android:text="@string/more"
+                                                    android:paddingStart="@dimen/value_5" />
+
+                                                <ImageView
+                                                    android:id="@+id/ivQuickOverViewMore"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginTop="@dimen/value_0.5"
+                                                    app:srcCompat="@drawable/ic_go_primary" />
+                                            </LinearLayout>
+
+                                            <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/value_0.5"
+                                                android:background="@color/gray_table" />
+
+                                        </LinearLayout>
+
+                                        <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                            android:layout_width="@dimen/value_0.5"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/gray_table" />
+
+
+                                    </LinearLayout>
+                                </FrameLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/value_10"
+                                android:layout_marginTop="@dimen/value_5"
+                                android:elevation="@dimen/value_1"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                    style="@style/txt_black_medium"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:padding="@dimen/value_5"
+                                    android:gravity="start"
+                                    android:textAlignment="viewStart"
+                                    android:textDirection="locale"
+                                    android:text="@string/detail" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/value_10"
+                                        android:background="@color/white" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="@dimen/value_5"
+                                        android:layout_marginRight="@dimen/value_5"
+                                        android:background="@drawable/white_gray_strok_button"
+                                        android:elevation="@dimen/value_2"
+                                        android:orientation="vertical"
+                                        android:layout_marginEnd="@dimen/value_5"
+                                        android:layout_marginStart="@dimen/value_5">
+
+
+                                        <LinearLayout
+                                            android:id="@+id/llProductDescription"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                                                style="@style/txt_black_small"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/value_2"
+                                                android:paddingLeft="@dimen/value_5"
+                                                android:gravity="start"
+                                                android:textAlignment="viewStart"
+                                                android:textDirection="locale"
+                                                android:text="@string/product_highlight"
+                                                android:paddingStart="@dimen/value_5" />
+
+
+                                            <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                                                android:id="@+id/tvProductDescription"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:maxLines="3"
+                                                android:padding="@dimen/value_5"
+                                                android:gravity="start"
+                                                android:textAlignment="viewStart"
+                                                android:textDirection="locale"
+                                                android:visibility="visible" />
+
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingBottom="@dimen/value_2.5">
+
+                                                <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                                                    android:id="@+id/tvMoreDetail"
+                                                    style="@style/txt_color_primary_small"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:paddingLeft="@dimen/value_5"
+                                                    android:text="@string/more"
+                                                    android:paddingStart="@dimen/value_5" />
+
+                                                <ImageView
+                                                    android:id="@+id/ivDetailMore"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="@dimen/value_0.5"
+                                                    android:layout_marginTop="@dimen/value_0.5"
+                                                    app:srcCompat="@drawable/ic_go_primary"
+                                                    android:layout_marginStart="@dimen/value_0.5" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/value_10"
+                                            android:layout_marginTop="@dimen/value_2.5"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:id="@+id/llratting"
+                                                android:layout_width="@dimen/value_40"
+                                                android:layout_height="@dimen/value_40"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="@dimen/value_5"
+                                                android:background="@drawable/gray_corner_button_with_primary_strok"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:layout_marginStart="@dimen/value_5">
+
+                                                <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                    android:id="@+id/tvAverageRatting"
+                                                    style="@style/txt_gray_small"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="0.0/5" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="@dimen/value_1"
+                                                    android:gravity="center">
+
+                                                    <com.potenza.ciyashop_cloths.customview.MaterialRatingBar
+                                                        android:id="@+id/ratingBar"
+                                                        style="@style/Widget.MaterialRatingBar.RatingBar"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:isIndicator="true"
+                                                        android:rating="0"
+                                                        android:stepSize="1"
+                                                        app:mrb_fillBackgroundStars="true"
+                                                        app:mrb_progressBackgroundTint="@color/star_color"
+                                                        app:mrb_progressTint="@color/yello" />
+
+                                                </LinearLayout>
+
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="start|center"
+                                                android:layout_marginLeft="@dimen/value_8"
+                                                android:gravity="start|center"
+                                                android:orientation="vertical"
+                                                android:layout_marginStart="@dimen/value_8">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+
+                                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                        android:id="@+id/tvFive"
+                                                        style="@style/txt_color_primary_small"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="5" />
+
+                                                    <com.potenza.ciyashop_cloths.customview.progressbar.RoundCornerProgressBar
+                                                        android:id="@+id/rattingFive"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="@dimen/value_1"
+                                                        android:layout_marginLeft="@dimen/value_5"
+                                                        android:layout_marginRight="@dimen/value_10"
+                                                        app:rcBackgroundColor="@color/gray"
+                                                        app:rcMax="100"
+                                                        app:rcProgressColor="@color/colorPrimary"
+                                                        app:rcRadius="0dp"
+                                                        android:layout_marginEnd="@dimen/value_10"
+                                                        android:layout_marginStart="@dimen/value_5" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+
+                                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                        android:id="@+id/tvFour"
+                                                        style="@style/txt_color_primary_small"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="4" />
+
+                                                    <com.potenza.ciyashop_cloths.customview.progressbar.RoundCornerProgressBar
+                                                        android:id="@+id/rattingFour"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="@dimen/value_1"
+                                                        android:layout_marginLeft="@dimen/value_5"
+                                                        android:layout_marginRight="@dimen/value_10"
+                                                        app:rcBackgroundColor="@color/gray"
+                                                        app:rcMax="100"
+                                                        app:rcProgressColor="@color/colorPrimary"
+                                                        app:rcRadius="0dp"
+                                                        android:layout_marginEnd="@dimen/value_10"
+                                                        android:layout_marginStart="@dimen/value_5" />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+
+                                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                        android:id="@+id/tvThree"
+                                                        style="@style/txt_color_primary_small"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="3" />
+
+                                                    <com.potenza.ciyashop_cloths.customview.progressbar.RoundCornerProgressBar
+                                                        android:id="@+id/rattingThree"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="@dimen/value_1"
+                                                        android:layout_marginLeft="@dimen/value_5"
+                                                        android:layout_marginRight="@dimen/value_10"
+                                                        app:rcBackgroundColor="@color/gray"
+                                                        app:rcMax="100"
+                                                        app:rcProgressColor="@color/colorPrimary"
+                                                        app:rcRadius="0dp"
+                                                        android:layout_marginEnd="@dimen/value_10"
+                                                        android:layout_marginStart="@dimen/value_5" />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+
+                                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                        android:id="@+id/tvTwo"
+                                                        style="@style/txt_color_primary_small"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="2" />
+
+                                                    <com.potenza.ciyashop_cloths.customview.progressbar.RoundCornerProgressBar
+                                                        android:id="@+id/rattingTwo"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="@dimen/value_1"
+                                                        android:layout_marginLeft="@dimen/value_5"
+                                                        android:layout_marginRight="@dimen/value_10"
+                                                        app:rcBackgroundColor="@color/gray"
+                                                        app:rcMax="100"
+                                                        app:rcProgressColor="@color/colorPrimary"
+                                                        app:rcRadius="0dp"
+                                                        android:layout_marginStart="@dimen/value_5"
+                                                        android:layout_marginEnd="@dimen/value_10" />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+
+                                                    <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                        android:id="@+id/tvOne"
+                                                        style="@style/txt_color_primary_small"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="1" />
+
+                                                    <com.potenza.ciyashop_cloths.customview.progressbar.RoundCornerProgressBar
+                                                        android:id="@+id/rattingOne"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="@dimen/value_1"
+                                                        android:layout_marginLeft="@dimen/value_5"
+                                                        android:layout_marginRight="@dimen/value_10"
+                                                        app:rcBackgroundColor="@color/gray"
+                                                        app:rcMax="100"
+                                                        app:rcProgressColor="@color/colorPrimary"
+                                                        app:rcRadius="0dp"
+                                                        android:layout_marginStart="@dimen/value_5"
+                                                        android:layout_marginEnd="@dimen/value_10" />
+
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/llReview"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <com.potenza.ciyashop_cloths.customview.textview.TextViewRegular
+                                                android:id="@+id/tvRateReview"
+                                                style="@style/txt_black_medium"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="@dimen/value_8"
+                                                android:layout_marginLeft="@dimen/value_5"
+                                                android:layout_marginRight="@dimen/value_5"
+                                                android:background="@drawable/black_strok_button"
+                                                android:gravity="center"
+                                                android:padding="@dimen/value_8"
+                                                android:text="@string/rate_write_review"
+                                                android:layout_marginStart="@dimen/value_5"
+                                                android:layout_marginEnd="@dimen/value_5" />
+
+                                            <android.support.v7.widget.RecyclerView
+                                                android:id="@+id/rvReview"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </FrameLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.potenza.ciyashop_cloths.customview.textview.TextViewBold
+                    android:id="@+id/tvCart"
+                    style="@style/txt_white_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:padding="@dimen/value_8"
+                    android:text="@string/add_to_Cart" />
+
+                <com.potenza.ciyashop_cloths.customview.textview.TextViewBold
+                    android:id="@+id/tvBuyNow"
+                    style="@style/txt_white_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="@dimen/value_8"
+                    android:text="@string/buy_now" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

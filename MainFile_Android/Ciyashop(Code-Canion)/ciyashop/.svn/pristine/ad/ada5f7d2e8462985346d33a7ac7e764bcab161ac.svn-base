@@ -1,0 +1,142 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.design.widget.AppBarLayout;
+import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class HomeActivity_ViewBinding implements Unbinder {
+  private HomeActivity target;
+
+  private View view2131296916;
+
+  private View view2131296918;
+
+  private View view2131296432;
+
+  @UiThread
+  public HomeActivity_ViewBinding(HomeActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public HomeActivity_ViewBinding(final HomeActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.drawerListView = Utils.findRequiredViewAsType(source, R.id.drawerListView, "field 'drawerListView'", ListView.class);
+    target.drawer_layout = Utils.findRequiredViewAsType(source, R.id.drawer_layout, "field 'drawer_layout'", DrawerLayout.class);
+    target.rvTopCategory = Utils.findRequiredViewAsType(source, R.id.rvTopCategory, "field 'rvTopCategory'", RecyclerView.class);
+    target.rvCategory = Utils.findRequiredViewAsType(source, R.id.rvCategory, "field 'rvCategory'", RecyclerView.class);
+    target.rvVerticalBanner = Utils.findRequiredViewAsType(source, R.id.rvVerticalBanner, "field 'rvVerticalBanner'", RecyclerView.class);
+    target.rvMostPopular = Utils.findRequiredViewAsType(source, R.id.rvMostPopular, "field 'rvMostPopular'", RecyclerView.class);
+    target.rvSpecialOffer = Utils.findRequiredViewAsType(source, R.id.rvSpecialOffer, "field 'rvSpecialOffer'", RecyclerView.class);
+    target.rvSixReason = Utils.findRequiredViewAsType(source, R.id.rvSixReason, "field 'rvSixReason'", RecyclerView.class);
+    target.rvRecentOffer = Utils.findRequiredViewAsType(source, R.id.rvRecentOffer, "field 'rvRecentOffer'", RecyclerView.class);
+    target.vpBanner = Utils.findRequiredViewAsType(source, R.id.vpBanner, "field 'vpBanner'", ViewPager.class);
+    target.layoutDots = Utils.findRequiredViewAsType(source, R.id.layoutDots, "field 'layoutDots'", LinearLayout.class);
+    target.tvTimer = Utils.findRequiredViewAsType(source, R.id.tvTimer, "field 'tvTimer'", TextViewRegular.class);
+    target.ivDrawer = Utils.findRequiredViewAsType(source, R.id.ivBack, "field 'ivDrawer'", ImageView.class);
+    target.llMain = Utils.findRequiredViewAsType(source, R.id.llMain, "field 'llMain'", LinearLayout.class);
+    target.llTopCategory = Utils.findRequiredViewAsType(source, R.id.llTopCategory, "field 'llTopCategory'", LinearLayout.class);
+    target.llBanner = Utils.findRequiredViewAsType(source, R.id.llBanner, "field 'llBanner'", LinearLayout.class);
+    target.llCategory = Utils.findRequiredViewAsType(source, R.id.llCategory, "field 'llCategory'", LinearLayout.class);
+    target.llVerticalBanner = Utils.findRequiredViewAsType(source, R.id.llVerticalBanner, "field 'llVerticalBanner'", LinearLayout.class);
+    target.llMostPopular = Utils.findRequiredViewAsType(source, R.id.llMostPopular, "field 'llMostPopular'", LinearLayout.class);
+    target.llSpecialOffer = Utils.findRequiredViewAsType(source, R.id.llSpecialOffer, "field 'llSpecialOffer'", LinearLayout.class);
+    target.llSixReason = Utils.findRequiredViewAsType(source, R.id.llSixReason, "field 'llSixReason'", LinearLayout.class);
+    target.llRecentView = Utils.findRequiredViewAsType(source, R.id.llRecentView, "field 'llRecentView'", LinearLayout.class);
+    target.swipeContainer = Utils.findRequiredViewAsType(source, R.id.swipeContainer, "field 'swipeContainer'", SwipeRefreshLayout.class);
+    target.ablHome = Utils.findRequiredViewAsType(source, R.id.ablHome, "field 'ablHome'", AppBarLayout.class);
+    target.ivNotification = Utils.findRequiredViewAsType(source, R.id.ivNotification, "field 'ivNotification'", ImageView.class);
+    view = Utils.findRequiredView(source, R.id.tvViewAllMostPopular, "field 'tvViewAllMostPopular' and method 'tvViewAllMostPopularClick'");
+    target.tvViewAllMostPopular = Utils.castView(view, R.id.tvViewAllMostPopular, "field 'tvViewAllMostPopular'", TextViewRegular.class);
+    view2131296916 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvViewAllMostPopularClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tvViewAllSpecialDeal, "field 'tvViewAllSpecialDeal' and method 'tvViewAllSpecialDealClick'");
+    target.tvViewAllSpecialDeal = Utils.castView(view, R.id.tvViewAllSpecialDeal, "field 'tvViewAllSpecialDeal'", TextViewRegular.class);
+    view2131296918 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvViewAllSpecialDealClick();
+      }
+    });
+    target.tvSixResonTitle = Utils.findRequiredViewAsType(source, R.id.tvSixResonTitle, "field 'tvSixResonTitle'", TextViewBold.class);
+    target.ivTimer = Utils.findRequiredViewAsType(source, R.id.ivTimer, "field 'ivTimer'", ImageView.class);
+    view = Utils.findRequiredView(source, R.id.etSearch, "method 'etSearchClick'");
+    view2131296432 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.etSearchClick();
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    HomeActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.drawerListView = null;
+    target.drawer_layout = null;
+    target.rvTopCategory = null;
+    target.rvCategory = null;
+    target.rvVerticalBanner = null;
+    target.rvMostPopular = null;
+    target.rvSpecialOffer = null;
+    target.rvSixReason = null;
+    target.rvRecentOffer = null;
+    target.vpBanner = null;
+    target.layoutDots = null;
+    target.tvTimer = null;
+    target.ivDrawer = null;
+    target.llMain = null;
+    target.llTopCategory = null;
+    target.llBanner = null;
+    target.llCategory = null;
+    target.llVerticalBanner = null;
+    target.llMostPopular = null;
+    target.llSpecialOffer = null;
+    target.llSixReason = null;
+    target.llRecentView = null;
+    target.swipeContainer = null;
+    target.ablHome = null;
+    target.ivNotification = null;
+    target.tvViewAllMostPopular = null;
+    target.tvViewAllSpecialDeal = null;
+    target.tvSixResonTitle = null;
+    target.ivTimer = null;
+
+    view2131296916.setOnClickListener(null);
+    view2131296916 = null;
+    view2131296918.setOnClickListener(null);
+    view2131296918 = null;
+    view2131296432.setOnClickListener(null);
+    view2131296432 = null;
+  }
+}

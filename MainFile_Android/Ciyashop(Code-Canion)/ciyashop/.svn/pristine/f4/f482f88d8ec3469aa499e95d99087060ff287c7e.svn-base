@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    tools:context="com.potenza.ciyashop_cloths.activity.LogInActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/value_15"
+            android:paddingLeft="@dimen/value_15"
+            android:paddingRight="@dimen/value_15"
+            android:paddingTop="@dimen/value_15"
+            android:paddingEnd="@dimen/value_15"
+            android:paddingStart="@dimen/value_15">
+
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_10"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_20"
+                android:src="@drawable/logo_ciya_shop" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/value_20"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:theme="@style/TextLabegray">
+
+                <com.potenza.ciyashop_cloths.customview.edittext.EditTextRegular
+                    android:id="@+id/etEmail"
+                    style="@style/txt_gray_medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="@dimen/value_8"
+                    android:hint="@string/email"
+                    android:textDirection="locale"
+                    android:textAlignment="viewStart"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="@dimen/value_8"
+                    android:singleLine="true"
+                    android:drawableStart="@drawable/ic_user" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/value_5"
+                android:theme="@style/TextLabegray">
+
+                <com.potenza.ciyashop_cloths.customview.edittext.EditTextRegular
+                    android:id="@+id/etPass"
+                    style="@style/txt_gray_medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="@dimen/value_8"
+                    android:hint="@string/password"
+                    android:textDirection="locale"
+                    android:textAlignment="viewStart"
+                    android:inputType="textPassword"
+                    android:paddingBottom="@dimen/value_8"
+                    android:singleLine="true"
+                    android:drawableStart="@drawable/ic_password" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_25"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/value_2"
+                    android:layout_weight="0.5"
+                    android:layout_marginEnd="@dimen/value_2">
+
+                    <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                        android:id="@+id/tvSignIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/value_8"
+                        android:paddingTop="@dimen/value_8"
+                        android:text="@string/sign_in"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/value_2"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/value_2">
+
+                    <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                        android:id="@+id/tvForgetPass"
+                        style="@style/txt_color_primary_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:background="@android:color/transparent"
+                        android:text="@string/forgot_password" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_25"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:gravity="center">
+
+                    <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Or Sign up with"
+                        style="@style/txt_black_medium"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_25"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/google_login_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/value_2"
+                    android:layout_weight="0.5"
+                    android:layout_marginEnd="@dimen/value_2">
+
+                    <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                        android:id="@+id/tvSignInWithGoogle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange"
+                        android:drawableLeft="@drawable/ic_google_plus"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/value_8"
+                        android:paddingLeft="@dimen/font_16"
+                        android:paddingTop="@dimen/value_8"
+                        android:drawablePadding="@dimen/value_2"
+                        android:text="@string/login_with_google"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/ic_google_plus"
+                        android:paddingStart="@dimen/font_16" />
+                </LinearLayout>
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/fb_login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/value_2"
+                    android:layout_weight="0.5"
+                    android:layout_marginStart="@dimen/value_2">
+
+                    <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                        android:id="@+id/tvSignInwithFB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+                        android:drawableLeft="@drawable/ic_facebook"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/value_8"
+                        android:paddingLeft="@dimen/font_16"
+                        android:paddingTop="@dimen/value_8"
+                        android:text="@string/login_with_facebook"
+                        android:drawablePadding="@dimen/value_2"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/ic_facebook"
+                        android:paddingStart="@dimen/font_16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.potenza.ciyashop_cloths.customview.textview.TextViewLight
+                android:id="@+id/tvNewUser"
+                style="@style/txt_color_primary_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_20"
+                android:background="@android:color/transparent"
+                android:text="@string/new_user_register_now" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

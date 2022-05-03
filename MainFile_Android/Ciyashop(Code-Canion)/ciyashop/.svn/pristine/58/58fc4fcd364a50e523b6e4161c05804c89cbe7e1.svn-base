@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://ciyashop-78b96.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">159661447493</string>
+    <string name="google_api_key" translatable="false">AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA</string>
+    <string name="google_app_id" translatable="false">1:159661447493:android:0f8c9f30518d0214</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA</string>
+    <string name="google_storage_bucket" translatable="false">ciyashop-78b96.appspot.com</string>
+    <string name="project_id" translatable="false">ciyashop-78b96</string>
+</resources>

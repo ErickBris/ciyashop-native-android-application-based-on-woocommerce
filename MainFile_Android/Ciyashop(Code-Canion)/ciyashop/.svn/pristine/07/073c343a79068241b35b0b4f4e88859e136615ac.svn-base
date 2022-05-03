@@ -1,0 +1,101 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v4.widget.NestedScrollView;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.potenza.ciyashop_cloths.R;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewBold;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewLight;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewMedium;
+import com.potenza.ciyashop_cloths.customview.textview.TextViewRegular;
+import de.hdodenhof.circleimageview.CircleImageView;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class SellerInfoActivity_ViewBinding implements Unbinder {
+  private SellerInfoActivity target;
+
+  private View view2131296802;
+
+  private View view2131296917;
+
+  @UiThread
+  public SellerInfoActivity_ViewBinding(SellerInfoActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public SellerInfoActivity_ViewBinding(final SellerInfoActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.rvCategoryGrid = Utils.findRequiredViewAsType(source, R.id.rvCategoryGrid, "field 'rvCategoryGrid'", RecyclerView.class);
+    target.rvReview = Utils.findRequiredViewAsType(source, R.id.rvReview, "field 'rvReview'", RecyclerView.class);
+    target.ivBannerImage = Utils.findRequiredViewAsType(source, R.id.ivBannerImage, "field 'ivBannerImage'", ImageView.class);
+    target.toolbar = Utils.findRequiredViewAsType(source, R.id.toolbar, "field 'toolbar'", Toolbar.class);
+    target.civProfileImage = Utils.findRequiredViewAsType(source, R.id.civProfileImage, "field 'civProfileImage'", CircleImageView.class);
+    target.tvName = Utils.findRequiredViewAsType(source, R.id.tvName, "field 'tvName'", TextViewBold.class);
+    target.tvRating = Utils.findRequiredViewAsType(source, R.id.tvRating, "field 'tvRating'", TextViewMedium.class);
+    target.tvStoreDescription = Utils.findRequiredViewAsType(source, R.id.tvStoreDescription, "field 'tvStoreDescription'", TextViewLight.class);
+    target.tvSellerAddress = Utils.findRequiredViewAsType(source, R.id.tvSellerAddress, "field 'tvSellerAddress'", TextViewLight.class);
+    target.llReview = Utils.findRequiredViewAsType(source, R.id.llReview, "field 'llReview'", LinearLayout.class);
+    view = Utils.findRequiredView(source, R.id.tvContactSeller, "field 'tvContactSeller' and method 'tvContactSellerClick'");
+    target.tvContactSeller = Utils.castView(view, R.id.tvContactSeller, "field 'tvContactSeller'", TextViewLight.class);
+    view2131296802 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvContactSellerClick();
+      }
+    });
+    target.collapsing_toolbar = Utils.findRequiredViewAsType(source, R.id.collapsing_toolbar, "field 'collapsing_toolbar'", CollapsingToolbarLayout.class);
+    target.nsvSellerData = Utils.findRequiredViewAsType(source, R.id.nsvSellerData, "field 'nsvSellerData'", NestedScrollView.class);
+    view = Utils.findRequiredView(source, R.id.tvViewAllReview, "field 'tvViewAllReview' and method 'tvNewUserClick'");
+    target.tvViewAllReview = Utils.castView(view, R.id.tvViewAllReview, "field 'tvViewAllReview'", TextViewRegular.class);
+    view2131296917 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.tvNewUserClick();
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    SellerInfoActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.rvCategoryGrid = null;
+    target.rvReview = null;
+    target.ivBannerImage = null;
+    target.toolbar = null;
+    target.civProfileImage = null;
+    target.tvName = null;
+    target.tvRating = null;
+    target.tvStoreDescription = null;
+    target.tvSellerAddress = null;
+    target.llReview = null;
+    target.tvContactSeller = null;
+    target.collapsing_toolbar = null;
+    target.nsvSellerData = null;
+    target.tvViewAllReview = null;
+
+    view2131296802.setOnClickListener(null);
+    view2131296802 = null;
+    view2131296917.setOnClickListener(null);
+    view2131296917 = null;
+  }
+}

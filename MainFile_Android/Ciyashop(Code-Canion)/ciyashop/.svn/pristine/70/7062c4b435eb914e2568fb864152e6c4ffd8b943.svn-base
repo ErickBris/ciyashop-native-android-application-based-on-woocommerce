@@ -1,0 +1,37 @@
+// Generated code from Butter Knife. Do not modify!
+package com.potenza.ciyashop_cloths.adapter;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.LinearLayout;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.facebook.drawee.view.SimpleDraweeView;
+import com.potenza.ciyashop_cloths.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class VerticalBannerAdapter$CategoryViewHolder_ViewBinding implements Unbinder {
+  private VerticalBannerAdapter.CategoryViewHolder target;
+
+  @UiThread
+  public VerticalBannerAdapter$CategoryViewHolder_ViewBinding(VerticalBannerAdapter.CategoryViewHolder target,
+      View source) {
+    this.target = target;
+
+    target.llMain = Utils.findRequiredViewAsType(source, R.id.llMain, "field 'llMain'", LinearLayout.class);
+    target.ivBanner = Utils.findRequiredViewAsType(source, R.id.ivBanner, "field 'ivBanner'", SimpleDraweeView.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    VerticalBannerAdapter.CategoryViewHolder target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.llMain = null;
+    target.ivBanner = null;
+  }
+}

@@ -1,0 +1,1016 @@
+{
+  "project_info": {
+    "project_number": "159661447493",
+    "firebase_url": "https://ciyashop-78b96.firebaseio.com",
+    "project_id": "ciyashop-78b96",
+    "storage_bucket": "ciyashop-78b96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:afe903da7d1eef8a",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_antique"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-v1ji0i1rv5p2kmhp1fd0om420gp2nisu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.ciyashop_antique",
+            "certificate_hash": "923163d9ff0ab15655bc3b185945ee70a2fdfb53"
+          }
+        },
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159661447493-54bhsoigfocmb09okhfohqselt5gbppl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monto.CiyaShopBarberShop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:1b35ac0682c56341",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_art_gallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-1vjfmqlkoho00rc2vsi48p76ci9hg2qa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.ciyashop_art_gallery",
+            "certificate_hash": "923163d9ff0ab15655bc3b185945ee70a2fdfb53"
+          }
+        },
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159661447493-54bhsoigfocmb09okhfohqselt5gbppl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monto.CiyaShopBarberShop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:fdc4f323175975fd",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_auto_parts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-o22qpom3uploosuij5gfcuuq9brqs5ut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.ciyashop_auto_parts",
+            "certificate_hash": "923163d9ff0ab15655bc3b185945ee70a2fdfb53"
+          }
+        },
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159661447493-54bhsoigfocmb09okhfohqselt5gbppl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monto.CiyaShopBarberShop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:7c9de57d885d6960",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_bag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-dooaab1li33ot6akrqvqhucmsnbdhpcs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.ciyashop_bag",
+            "certificate_hash": "923163d9ff0ab15655bc3b185945ee70a2fdfb53"
+          }
+        },
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159661447493-54bhsoigfocmb09okhfohqselt5gbppl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monto.CiyaShopBarberShop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:a70bcddb56de27ef",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_bakery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-f8vs7ttople0bq5ng5fu76e0rsm5nld8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.ciyashop_bakery",
+            "certificate_hash": "923163d9ff0ab15655bc3b185945ee70a2fdfb53"
+          }
+        },
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159661447493-54bhsoigfocmb09okhfohqselt5gbppl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monto.CiyaShopBarberShop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:25d702dbcafd79a5",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_barber_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:5b4617ef7ead1429",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_bicycle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:0f8c9f30518d0214",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_cloths"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-e5tesg2u88djpr5ooes1257d30rdk7ki.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.ciyashop_cloths",
+            "certificate_hash": "923163d9ff0ab15655bc3b185945ee70a2fdfb53"
+          }
+        },
+        {
+          "client_id": "159661447493-k9kl7lkhfbko4of71qel22f86au9m275.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.ciyashop_cloths",
+            "certificate_hash": "c36b109ccd0a8add8d5cc144a472269c0c41636f"
+          }
+        },
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159661447493-54bhsoigfocmb09okhfohqselt5gbppl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monto.CiyaShopBarberShop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:e791c3dc768230c7",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_coffee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:128e5b4bb698cecc",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_fashion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-pkr18i3rhok6t6tonf8fgkphmr9mu6sm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.ciyashop_fashion",
+            "certificate_hash": "e878c1ee1cde3ea7513b2b2a119683141bcb7b99"
+          }
+        },
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159661447493-54bhsoigfocmb09okhfohqselt5gbppl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monto.CiyaShopBarberShop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:9d4defeb44f8af32",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_fashion_modern"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:1ce69d4720301bed",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_flower"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:ed1ac25abc536b58",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_furniture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:4531878277c167e5",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_goggles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:3447a2445d7e117d",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_gym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:b9f7c98a85b510cb",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_home_slider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:dd6a46081a72c4ff",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_kids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:23f5439544cd3112",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_landing_shoes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:e4e5fcd38e258cd0",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_medical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-dsaftcmjd2j4nkhdurknre484u8agc0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.potenza.ciyashop_medical",
+            "certificate_hash": "e878c1ee1cde3ea7513b2b2a119683141bcb7b99"
+          }
+        },
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159661447493-54bhsoigfocmb09okhfohqselt5gbppl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monto.CiyaShopBarberShop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:ae5c791e77f0dc49",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_perfume"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:65d1a9c41838e8ea",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_petstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:4ae2f67fb5421bc0",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_plumbing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:ca635d4470501d03",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_shisha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:1332b7d598a45b2a",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_suit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:5d5b8570013e137a",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_toys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:0476ffdf485b763a",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_watch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:dc7bc2ae4c4d2e05",
+        "android_client_info": {
+          "package_name": "com.potenza.ciyashop_wedding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
